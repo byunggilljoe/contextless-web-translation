@@ -1,4 +1,4 @@
-# Contextless Web Markup Translation
+# Contextful Web Markup Translation
 
 Dataset and translation experiments for **“Overcoming contextless web markup text translation: A parallel and selective Q&A-driven LLM approach.”** The dataset contains **1,018 translation items and 174 language-specific HTML snapshots**. [한국어](README.md) [Dataset structure](DATASET.en.md)
 
@@ -80,7 +80,7 @@ python validate.py
 
 On Windows PowerShell, activate the environment with `.venv\Scripts\Activate.ps1`.
 
-The [complete dataset and code ZIP](https://github.com/byunggilljoe/contextless-web-translation/releases/latest) includes all 174 HTML snapshots. For a Git checkout, copy `reproduction_bundle/data/html/` from the ZIP to `data/html/` in your checkout before running validation.
+The [complete dataset and code ZIP](https://github.com/byunggilljoe/contextful-web-translation/releases/latest) includes all 174 HTML snapshots. For a Git checkout, copy `reproduction_bundle/data/html/` from the ZIP to `data/html/` in your checkout before running validation.
 
 Inspect translation prompts and cleansed HTML:
 

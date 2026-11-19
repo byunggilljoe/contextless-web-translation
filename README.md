@@ -1,4 +1,4 @@
-# Contextless Web Markup Translation
+# Contextful Web Markup Translation
 
 논문 **“Overcoming contextless web markup text translation: A parallel and selective Q&A-driven LLM approach”**의 데이터셋과 번역 실험 코드입니다. **번역 항목 1,018개와 언어별 HTML 스냅샷 174개**를 제공합니다. [English](README.en.md) [데이터셋 구조](DATASET.md)
 
@@ -80,7 +80,7 @@ python validate.py
 
 Windows PowerShell에서는 `.venv\Scripts\Activate.ps1`로 가상환경을 활성화합니다.
 
-[전체 데이터·코드 ZIP](https://github.com/byunggilljoe/contextless-web-translation/releases/latest)에는 HTML 174개가 포함되어 있습니다. Git으로 받은 경우에는 ZIP의 `reproduction_bundle/data/html/`을 복제한 프로젝트의 `data/html/`로 복사한 뒤 검증합니다.
+[전체 데이터·코드 ZIP](https://github.com/byunggilljoe/contextful-web-translation/releases/latest)에는 HTML 174개가 포함되어 있습니다. Git으로 받은 경우에는 ZIP의 `reproduction_bundle/data/html/`을 복제한 프로젝트의 `data/html/`로 복사한 뒤 검증합니다.
 
 입력 프롬프트와 HTML 정제 결과는 다음 명령으로 확인합니다.
 
