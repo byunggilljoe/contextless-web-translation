@@ -1,0 +1,42 @@
+[
+  {
+    "id": "en2ko:8",
+    "differences": {
+      "어색한 단어": {
+        "annotation_csv": "보고",
+        "experiment_json": "보고 "
+      }
+    }
+  },
+  {
+    "id": "en2ko:67",
+    "differences": {
+      "어색한 단어": {
+        "annotation_csv": "10달러부터 개인화 하세요",
+        "experiment_json": "10달러부터, 나만을 위한 맞춤 아이템"
+      },
+      "적합단어 1": {
+        "annotation_csv": "10달러부터, 나만을 위한 맞춤 아이템",
+        "experiment_json": ""
+      }
+    }
+  },
+  {
+    "id": "de2ko:5",
+    "differences": {
+      "원래단어": {
+        "annotation_csv": "Mehr",
+        "experiment_json": "Mehr "
+      }
+    }
+  },
+  {
+    "id": "de2ko:83",
+    "differences": {
+      "원래단어": {
+        "annotation_csv": "Sie sparen",
+        "experiment_json": "Sie sparen "
+      }
+    }
+  }
+]

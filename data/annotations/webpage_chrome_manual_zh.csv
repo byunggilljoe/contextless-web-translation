@@ -1,0 +1,101 @@
+번호,URL,원래단어,어색한 단어,적합단어 1,적합단어 2,적합단어 3,exclude from user survey,include exp1,failure type,2en,2de,2es
+0,https://www.amazon.com/Amazon-Essentials-Flannel-Pajama-Black/dp/B07BJKXRKD/?_encoding=UTF8&pd_rd_w=VuXrB&content-id=amzn1.sym.9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_p=9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_r=YW1PBAXYY5M56068QDS5&pd_rd_wg=uePGy&pd_rd_r=d204ef82-5d10-460c-8c06-46f26e6b4e54&ref_=pd_hp_d_btf_crs_zg_bs_7141123011,访问 Amazon Essentials 品牌旗舰店,Amazon Essentials Store를 방문하세요,Amazon Essentials 브랜드 공식스토어 방문,,,,,unnatural sentence,Visit the Amazon Essentials Store,Besuchen Sie den Amazon Essentials Store,Visita la tienda Amazon Essentials
+,,面料类型,원단 종류,소재,,,,,unnatural vocab,Fabric Type,Stoffart,Tipo de tela
+,,闭合类型,폐쇄 유형,잠금 방식,,,,,web-context failure,Closure Type,Verschlussart,Tipo de cierre
+,,拉绳,드로코드,허리 끈,,,,,unnatural vocab,drawstring,Kordelzug,Cordón de ajuste
+,,可持续发展特性,지속 가능한 개발 특성,지속 가능성,,,,,unnatural vocab,Sustainable Development Features,Merkmale der nachhaltigen Entwicklung,Características del desarrollo sostenible
+,,化工安全,화학 안전,화학적 안전성,,,,,unnatural vocab,Chemical Safety,Chemische Sicherheit,Seguridad química
+,,部门,부서,카테고리,,,,,web-context failure,department,Abteilung,departamento
+,,ASIN,그리고,ASIN,,,,,unnatural sentence,ASIN,ASIN,ASIN
+1,https://www.amazon.com/crocs-Unisex-Classic-Black-Women/dp/B0014BYHNK/ref=sr_1_1?crid=ABAXBIBVZ705&dib=eyJ2IjoiMSJ9.Bp-YBJ-waAeaEe999dWnb4G4XZANdJ9AMs0sChqPeUhGN6yknuDPdPcS-pqbSknzPFH4zTeIFrz8SBvxQYcdJntrT4sVXLrmAv49ABsuLUzIUDR_vLFH4xRzer7wn0W8_GRx2VEoDFo9HQYFvNT3_l34q7wdyCnhgMRWW05GkR3xkM47_sYa_pRI552kArvuSQb3qHS2wvY7_YiZxQx6W2l_plwA2c_AKdy5aLLW0EkytndoePr7A54AghQsFzdc8_sLWJReu3IkLG_7-yrU_Pi3nbv6eOWpGbUrplHLTvc.XVR_LkGdSgZNokywmrzPfg78D04kqGDY1YImaqE3Nyo&dib_tag=se&keywords=Crocs+Unisex+Adult+Classic+Clog&qid=1734103282&sprefix=crocs+unisex+adult+classic+clog%2Caps%2C269&sr=8-1,唯一材质,유일한 재료,주요 소재,,,,,unnatural vocab,Unique material,Einzigartiges Material,Material único
+,,选择,선택하다,선택,,,,,unnatural verb,choose,wählen,elegir
+,,了解我们,우리를 알아보세요,회사 소개,,,,,unnatural sentence,Get to know us,Lernen Sie uns kennen,Conózcanos
+2,https://www.amazon.com/,家居装饰,홈 데코,인테리어 소품,,,,,unnatural vocab,Home Decor,Wohndeko,Decoración del hogar
+,,五金器具,하드웨어,철물 공구,,,,,unnatural vocab,Hardware,Hardware,Hardware
+,,键盘,건반,키보드,,,,,web-context failure,keyboard,Tastatur,teclado
+3,reddit.com,创建,만들다,새 글 쓰기,,,,,unnatural verb,create,erstellen,crear
+4,https://www.nytimes.com/,中文,중국인,중국어,,,,,web-context failure,Chinese,chinesisch,Chino
+,,国际,국제성,국제,,,,,unnatural vocab,internationality,Internationalität,internacionalidad
+,,科技,과학과 기술,과학 기술,,,,,ETC,science and technology,Wissenschaft und Technologie,ciencia y tecnología
+,,风尚,기르다,패션,,,,,web-context failure,fashion,Mode,moda
+5,notion.com (byunggill todos),搜索,찾다,검색,,,,,unnatural vocab,search,suchen,buscar
+,,私人,사적인,개인,,,,,unnatural adjective,private,Privat,privado
+,,新增,추가됨,새로 만들기,,,,,unnatural adjective,Added,Hinzugefügt,Agregado
+,,模板,주형,템플릿,,,,,unnatural vocab,template,Vorlage,plantilla
+6,https://en.wikipedia.org/wiki/Large_language_model,阅读,읽다,읽기,,,,,unnatural verb,read,lesen,leer
+,,编辑,편집하다,편집,,,,,unnatural verb,edit,bearbeiten,editar
+,,条目,기입,문서,,,,,unnatural vocab,entry,Eintrag,entrada
+,,讨论,논의하다,토론,,,,,unnatural verb,discuss,diskutieren,conversar
+,,偏差和局限性,편견과 한계,편향과 한계,,,,,unnatural vocab,Biases and limitations,Vorurteile und Einschränkungen,Sesgos y limitaciones
+7,https://x.com/home,探索,탐구하다,탐색,,,,,unnatural verb,explore,erkunden,explorar
+,,关注,에 집중하다,팔로잉,,,,,web-context failure,focus on,konzentrieren Sie sich auf,concentrarse en
+,,私信,사신,다이렉트 메시지,,,,,unnatural vocab,Private Message,Private Nachricht,Mensaje privado
+10,ebay.com,首页,첫 페이지,홈,,,,,unnatural vocab,front page,Titelseite,página delantera
+,,培训中心,훈련 센터,교육 센터,,,,,unnatural vocab,Training Center,Schulungszentrum,Centro de formación
+,,测试中心,선별진료소,테스트 센터,,,,,unnatural vocab,Testing Center,Testzentrum,Laboratorio de detección
+,,更多,더,더 보기,,,,,unnatural adjective,More,Mehr,Más
+14,https://www.yelp.com/biz/yemeni-kabab-and-mediterranean-san-francisco-3?hrid=Wyh7Ja0In9sJuaQAA281Qw,註冊,등록하다,회원가입하기,,,,,unnatural verb,register,registrieren,registro
+,,更多,더,더 보기,,,,,unnatural adjective,More,Mehr,Más
+18,airbnb.com,隐私,운둔,개인정보보호,,,,,unnatural vocab,privacy,Datenschutz,privacidad
+,,条款,자귀,약관,,,,,unnatural vocab,Terms,Bedingungen,Términos
+19,https://www.airbnb.com/rooms/18506534?adults=1&category_tag=Tag%3A8653&children=0&enable_m3_private_room=true&infants=0&pets=0&photo_id=965801101&search_mode=flex_destinations_search&check_in=2025-01-05&check_out=2025-01-10&source_impression_id=p3_1735030007_P3R_JdLIhKNJSjVE&previous_page_section_name=1000&federated_search_id=aa30c510-46eb-448d-9aed-d8379d84d471,一,하나,월,,,,,web-context failure,one,eins,uno
+,,二,둘,화,,,,,web-context failure,two,zwei,dos
+,,三,셋,수,,,,,web-context failure,three,drei,tres
+,,四,넷,목,,,,,web-context failure,Four,Vier,Cuatro
+20,linkedin.com,首页,첫 페이지,홈,,,,,unnatural vocab,front page,Titelseite,página delantera
+,,人脉,회원망,내 네트워크,,,,,unnatural vocab,connections,Netzwerk,Red
+,,职位,위치,채용,,,,,web-context failure,Position,Position,Posición
+,,写文章,기사를 쓰세요,게시글 작성,,,,,unnatural vocab,Write an article,Einen Artikel schreiben,Escribe un artículo
+22,similarweb.com,解决方案,해결책,솔루션,,,,,unnatural vocab,Solution,Lösung,Solución
+,,资源,의지,리소스,,,,,web-context failure,resource,Ressource,recurso
+,,定价,가격,요금제,,,,,unnatural vocab,Pricing,Precios,Precios
+,,获取洞见,통찰력을 얻으세요,인사이트 확인,,,,,unnatural sentence,Get insights,Einblicke erhalten,Obtenga información
+23,duckduckgo.com,简讯,간략한 뉴스,뉴스레터,,,,,unnatural vocab,News in Brief,Newsletter,Hoja informativa
+,,帮助,돕다,도움말,,,,,unnatural verb,help,helfen,ayuda
+,,社群,지역 사회,커뮤니티,,,,,unnatural vocab,community,Gemeinschaft,comunidad
+26,canva.com,设计场景,디자인 시나리오,디자인 템플릿,,,,,unnatural vocab,Design scenario,Entwurfsszenario,Escenario de diseño
+,,资源教程,리소스 튜토리얼,학습 자료,,,,,unnatural vocab,Resource Tutorials,Ressourcen-Tutorial,Tutorial de recursos
+,,诚聘英才,경력,채용 정보,,,,,web-context failure,Careers,Karriere,Carreras
+,,探索,탐구하다,탐색,,,,,unnatural verb,explore,erkunden,explorar
+,,新闻室,뉴스 편집실,뉴스룸,,,,,unnatural vocab,Newsroom,Pressemitteilung,Sala de prensa
+,,安卓版,기계적 인조 인간,Android 버전,,,,,unnatural vocab,Android,Android,Androide
+27,https://open.spotify.com/,法律,법,법률,,,,,unnatural vocab,law,Gesetz,ley
+,,关于广告,광고에 관하여,광고 정책,,,,,unnatural vocab,About Advertising,Über Werbung,Acerca de la publicidad
+29,https://www.booking.com/hotel/jp/hotel-she-kyoto.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaH2IAQGYARe4ARfIAQzYAQHoAQH4AQyIAgGoAgO4AsTcs7sGwAIB0gIkODMzNDEwYjAtYmEyZi00ZGY0LTg5MWYtMjk2NWMwNmI1MTZj2AIG4AIB&sid=f0428e17b9e6afc6c0a4fb419bfcfada&all_sr_blocks=171061002_389976121_0_0_0&checkin=2024-12-28&checkout=2024-12-31&dest_id=-235402&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=4&highlighted_blocks=171061002_389976121_0_0_0&hpos=4&matching_block_id=171061002_389976121_0_0_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=171061002_389976121_0_0_0__7012756&srepoch=1735192897&srpvid=8fa5294792500313&type=total&ucfs=1&,住宿,머무르다,숙박,,,,,unnatural verb,stay,bleiben,permanecer
+,,首页,첫 페이지,홈,,,,,unnatural vocab,front page,Titelseite,página delantera
+,,价格更放心,더욱 확실한 가격,안심 가격,,,,,unnatural vocab,More assured price,Sichererer Preis,Precio más seguro
+,,很棒,엄청난,매우 좋음,,,,,unnatural vocab,great,Großartig,excelente
+,,员工素质,직원의 질,직원 친절도,,,,,unnatural vocab,Staff quality,Qualität des Personals,Calidad del personal
+32,https://www.adobe.com/#,Adobe,어도비 벽돌,어도비,,,,,web-context failure,Adobe,Adobe,Adobe
+,,关于,-에 대한,어도비 소개,,,,,web-context failure,about,um,acerca de
+,,新闻中心,뉴스 편집실,뉴스룸,,,,,unnatural vocab,News Center,Nachrichtenzentrum,Centro de noticias
+,,支持,지원하다,지원,,,,,unnatural verb,support,Unterstützung,apoyo
+41,https://www.xbox.com/en-CA?source=lp,社区,지역 사회,커뮤니티,,,,,unnatural vocab,Community,Gemeinschaft,Comunidad
+,,支持,지원하다,지원,,,,,unnatural verb,support,Unterstützung,apoyo
+,,搜索,찾다,검색,,,,,unnatural verb,search,suchen,buscar
+43,https://www.playstation.com/en-us/games/lego-horizon-adventures/,服务,제공하다,서비스,,,,,unnatural verb,Serve,Aufschlag,Atender
+,,配件,부속품,액세서리,,,,,unnatural vocab,Accessories,Zubehör,Accesorios
+,,最新信息,최신 정보,새 소식,,,,,unnatural vocab,Latest Information,Aktuelle Informationen,Información más reciente
+,,商店,가게,스토어,,,,,unnatural vocab,shop,Geschäft,comercio
+,,支持,지원하다,지원,,,,,unnatural verb,support,Unterstützung,apoyo
+,,搜索,찾다,검색,,,,,unnatural verb,search,suchen,buscar
+47,https://www.riotgames.com/en,与我们共事,우리와 함께 일하세요,함께 일하기,,,,,unnatural sentence,Work with us,Arbeiten Sie mit uns,Trabaja con nosotros
+,,玩家支持,플레이어 지원,플레이어 지원 센터,,,,,unnatural vocab,Player Support,Spieler Support,Soporte al jugador
+,,年度报告,연보,연간 보고서,,,,,unnatural vocab,Annual Report,Jahresbericht,Informe anual
+52,https://www.investing.com/etfs/spdr-s-p-500,看涨,강세,매수 의견,,,,,unnatural vocab,Bullish,Bullisch,Alcista
+,,公允价值,공정 가치,적정 가치,,,,,unnatural vocab,fair value,beizulegender Zeitwert,valor razonable
+,,分析师评级,분석가 평점,애널리스트 평점,,,,,unnatural vocab,Analyst Rating,Analystenbewertungen,Calificación de analistas
+55,https://www.skyscanner.co.kr/,出发,출발하다,출발하기,,,,,unnatural verb,Set off,Losfahren,Activar
+,,返程,반품,돌아오는 편,,,,,web-context failure,Return,Zurückkehren,Devolver
+,,添加附近的机场,근처 공항 추가,근처 공항 포함,,,,,unnatural vocab,Add nearby airports,Fügen Sie nahegelegene Flughäfen hinzu,Añadir aeropuertos cercanos
+,,添加酒店,호텔 추가,호텔 포함,,,,,unnatural vocab,Add Hotel,Hotel hinzufügen,Añadir hotel
+58,https://www.tradingview.com/#crypto,股票,재고,주식,,,,,web-context failure,stock,Aktie,existencias
+,,CEX对,CEX 쌍,CEX 마켓,,,,,web-context failure,CEX pairs,CEX-Paare,Pares CEX
+,,收益,소득,수익,,,,,unnatural vocab,income,Einkommen,ingreso
+59,https://www.binance.com/en/price/bitcoin,社区,지역 사회,커뮤니티,,,,,unnatural vocab,Community,Gemeinschaft,Comunidad
+,,关于我们,우리에 대해,회사 소개,,,,,unnatural vocab,about Us,über uns,sobre nosotros
+,,职业机会,커리어 기회,채용 정보,,,,,unnatural vocab,Career Opportunities,Karrierechancen,Oportunidades profesionales
+,,公告中心,공지 센터,공지사항,,,,,unnatural vocab,Announcement Center,Ankündigungszentrum,Centro de anuncios
+,,法律,법,법률,,,,,unnatural vocab,law,Gesetz,ley
+,,服务协议,서비스 계약,이용 약관,,,,,unnatural vocab,Service Agreement,Servicevereinbarung,Acuerdo de servicio
+,,隐私说明,개인정보 보호 설명,개인정보 처리방침,,,,,unnatural vocab,Privacy Statement,Datenschutzerklärung,Declaración de privacidad

@@ -1,0 +1,130 @@
+{
+  "source_git_commit": "dd5a3eb5bb7d61494a480380376846d39627fcda",
+  "note": "Working-tree files were exported; hashes identify their actual contents. The working tree contained local changes; the commit alone is not a full provenance record.",
+  "samples": 1018,
+  "language_specific_pages": 174,
+  "distinct_exact_urls": 74,
+  "samples_by_language_pair": {
+    "en2ko": 524,
+    "de2ko": 194,
+    "es2ko": 200,
+    "zh2ko": 100
+  },
+  "canonical_metadata": "preprocessed-survey-data JSON; not the raw annotation CSV",
+  "excluded_from_user_survey": 61,
+  "missing_primary_reference": [
+    "en2ko:67"
+  ],
+  "source_files": [
+    {
+      "source": "data/survey/raw-survey-data/csv_files/webpage_chrome_manual_en.csv",
+      "sha256": "5a6a77d750d5243862be51dc435e6c02b5ff217b11b79fea19fa38016557f896"
+    },
+    {
+      "source": "data/survey/preprocessed-survey-data/en2ko/webpage_chrome_manual.json",
+      "sha256": "f18d37454347eddf85c52034e73424d9acabbfddbedb3fdf2bb8ba7c8281a0fc"
+    },
+    {
+      "source": "data/survey/raw-survey-data/csv_files/webpage_chrome_manual_de.csv",
+      "sha256": "87f255462cc4152107bfaddd4543023d1726ffe067a2d77660061fc6d20c9465"
+    },
+    {
+      "source": "data/survey/preprocessed-survey-data/de2ko/webpage_chrome_manual.json",
+      "sha256": "f11fd04e98dbd9ab7d819fce2c013dfab115528dfce0ea10356a5856e494ba25"
+    },
+    {
+      "source": "data/survey/raw-survey-data/csv_files/webpage_chrome_manual_es.csv",
+      "sha256": "f8e6a4e3a4e911bbe07c4d69cdbe4d68e582190670f79a76d46c54fd22d5a0ff"
+    },
+    {
+      "source": "data/survey/preprocessed-survey-data/es2ko/webpage_chrome_manual.json",
+      "sha256": "f0de6ea4160081ba9401a68a26e4654e4d9817dfe7ea4f253a161eb08d7b7577"
+    },
+    {
+      "source": "data/survey/raw-survey-data/csv_files/webpage_chrome_manual_zh.csv",
+      "sha256": "0d705314b0f08b324da2baeaf88d16f0d0deb284542930aad36ec0fdf09c655b"
+    },
+    {
+      "source": "data/survey/preprocessed-survey-data/zh2ko/webpage_chrome_manual.json",
+      "sha256": "444820cc59fdb11956a3c31d703d9d0ed1e005cbe2885e4eebb6774bfd383be0"
+    },
+    {
+      "source": "common/process_html.py",
+      "source_sha256": "3e872409e739ca095ce5520b56f7081e51fe93af3fb34dd18bc35f2bdec480c3",
+      "exported_sha256": "3e872409e739ca095ce5520b56f7081e51fe93af3fb34dd18bc35f2bdec480c3",
+      "private_hosts_redacted": 0
+    },
+    {
+      "source": "preprocess_data.py",
+      "source_sha256": "b8e5e426cbbf551e15c74dc252eafe3ad62034d7a8ad9bd7d02a145300fba181",
+      "exported_sha256": "b8e5e426cbbf551e15c74dc252eafe3ad62034d7a8ad9bd7d02a145300fba181",
+      "private_hosts_redacted": 0
+    },
+    {
+      "source": "configs/gen_params.py",
+      "source_sha256": "32dd5364016127de0e5600335bbe439534e2534c3cf53cbe17fb959f3026ffdd",
+      "exported_sha256": "32dd5364016127de0e5600335bbe439534e2534c3cf53cbe17fb959f3026ffdd",
+      "private_hosts_redacted": 0
+    },
+    {
+      "source": "translate_target_string/ray_version.py",
+      "source_sha256": "f62bc0b88d161b72f3cd38f4585a8d50e8d29c0a6b7f3534d6320390d284f390",
+      "exported_sha256": "f62bc0b88d161b72f3cd38f4585a8d50e8d29c0a6b7f3534d6320390d284f390",
+      "private_hosts_redacted": 0
+    },
+    {
+      "source": "translate_target_string/ray_version_no_prompt_context.py",
+      "source_sha256": "7c2edaee730705e1587442d85cbbb28a1b0d01adb33dad8a277d4bd0828ec857",
+      "exported_sha256": "7c2edaee730705e1587442d85cbbb28a1b0d01adb33dad8a277d4bd0828ec857",
+      "private_hosts_redacted": 0
+    },
+    {
+      "source": "translate_all/main.py",
+      "source_sha256": "7f9bfd9e34f2bedd6044d2d9b5c5027be3f4462e56395ae348fae691095323eb",
+      "exported_sha256": "7f9bfd9e34f2bedd6044d2d9b5c5027be3f4462e56395ae348fae691095323eb",
+      "private_hosts_redacted": 0
+    },
+    {
+      "source": "translate_all/main_vllm.py",
+      "source_sha256": "1b9ed6fe3d6019c29c3b05cf611222214764d8f4f493dfc594dd38aa48c5f90f",
+      "exported_sha256": "1beaf849e1a05a276080ffa7fac8587075f7d8f594cdff28d2460251dcd2021a",
+      "private_hosts_redacted": 1
+    },
+    {
+      "source": "translate_all/timing.py",
+      "source_sha256": "76ce0239eb175d581cc3dd386125991c62360e2321f78ec140ed93123ed7a04a",
+      "exported_sha256": "76ce0239eb175d581cc3dd386125991c62360e2321f78ec140ed93123ed7a04a",
+      "private_hosts_redacted": 0
+    },
+    {
+      "source": "translate_all/animation.py",
+      "source_sha256": "4b538779f07b44e0ad62066f8d0df28990433edbc6eb392041e3e949ccbe62a5",
+      "exported_sha256": "4b538779f07b44e0ad62066f8d0df28990433edbc6eb392041e3e949ccbe62a5",
+      "private_hosts_redacted": 0
+    },
+    {
+      "source": "translate_all/speedup_tests/huggingface_use_cache_test.py",
+      "source_sha256": "91a4e38da762a914b4425f6fb5edb8afe52600684cb6bf1324fe884246e287f9",
+      "exported_sha256": "91a4e38da762a914b4425f6fb5edb8afe52600684cb6bf1324fe884246e287f9",
+      "private_hosts_redacted": 0
+    },
+    {
+      "source": "survey_llm/json_answer_to_csv.py",
+      "source_sha256": "dea1ed5e12bbf716383e12bf2a808aedb980dbd09b66216428dc1b42b67534c2",
+      "exported_sha256": "dea1ed5e12bbf716383e12bf2a808aedb980dbd09b66216428dc1b42b67534c2",
+      "private_hosts_redacted": 0
+    },
+    {
+      "source": "script/run_translate_target_cleanse.sh",
+      "source_sha256": "6caebf30cb50378a852b963a53f77cec463cfa6d9ed58cb5e5222271cb0e2383",
+      "exported_sha256": "6caebf30cb50378a852b963a53f77cec463cfa6d9ed58cb5e5222271cb0e2383",
+      "private_hosts_redacted": 0
+    },
+    {
+      "source": "script/run_speed_test.sh",
+      "source_sha256": "ce954ac8cd504ce21ac386c2c9b8c8922239850d980d3d0e2cab1e4c09e3821f",
+      "exported_sha256": "ce954ac8cd504ce21ac386c2c9b8c8922239850d980d3d0e2cab1e4c09e3821f",
+      "private_hosts_redacted": 0
+    }
+  ]
+}

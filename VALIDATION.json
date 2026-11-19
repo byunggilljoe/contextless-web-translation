@@ -1,0 +1,54 @@
+{
+  "samples": 1018,
+  "samples_by_language_pair": {
+    "en2ko": 524,
+    "de2ko": 194,
+    "es2ko": 200,
+    "zh2ko": 100
+  },
+  "language_specific_pages": 174,
+  "distinct_exact_urls": 74,
+  "html_checksums_verified": 174,
+  "excluded_from_user_survey": 61,
+  "missing_reference_ids": [
+    "en2ko:67"
+  ],
+  "target_matching": {
+    "checked": 1018,
+    "matched": 1010,
+    "failures": [
+      {
+        "id": "en2ko:220",
+        "reason": "target_not_found"
+      },
+      {
+        "id": "en2ko:337",
+        "reason": "target_not_found"
+      },
+      {
+        "id": "de2ko:5",
+        "reason": "target_not_found"
+      },
+      {
+        "id": "de2ko:83",
+        "reason": "target_not_found"
+      },
+      {
+        "id": "de2ko:146",
+        "reason": "target_not_found"
+      },
+      {
+        "id": "de2ko:147",
+        "reason": "target_not_found"
+      },
+      {
+        "id": "es2ko:169",
+        "reason": "target_not_found"
+      },
+      {
+        "id": "es2ko:170",
+        "reason": "target_not_found"
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-19",
+  "model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "model_revision": "381fc969f78efac66bc87ff7ddeadb7e73c218a7",
+  "environment": {
+    "python": "3.12.2",
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "gpu_count": 1,
+    "torch_cuda": "12.8",
+    "nvidia_driver": "565.57.01",
+    "model_dtype": "bfloat16",
+    "packages": {
+      "beautifulsoup4": "4.12.3",
+      "soupsieve": "2.6",
+      "vllm": "0.15.1",
+      "transformers": "4.57.6",
+      "torch": "2.9.1",
+      "huggingface-hub": "0.36.2",
+      "tokenizers": "0.22.2",
+      "triton": "3.5.1"
+    }
+  },
+  "config": {
+    "command": "translate",
+    "pair": "all",
+    "sample_ids": [
+      "en2ko:1",
+      "en2ko:2",
+      "en2ko:3",
+      "de2ko:1",
+      "de2ko:2",
+      "de2ko:3",
+      "es2ko:1",
+      "es2ko:2",
+      "zh2ko:1",
+      "zh2ko:2"
+    ],
+    "limit": null,
+    "survey_only": false,
+    "mode": "qa",
+    "window": 128,
+    "no_clean": false,
+    "backend": "vllm",
+    "model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+    "workers": 4,
+    "batch_size": 32,
+    "temperature": 0.01,
+    "max_tokens": 32,
+    "timeout": 180,
+    "seed": 0,
+    "tensor_parallel_size": 1,
+    "max_model_len": 15872,
+    "gpu_memory_utilization": 0.9,
+    "no_prefix_cache": false,
+    "dry_run": false
+  },
+  "summary": {
+    "total": 10,
+    "status_counts": {
+      "ok": 10
+    },
+    "finish_reason_counts": {
+      "stop": 10
+    },
+    "by_language_pair": {
+      "en2ko": 3,
+      "de2ko": 3,
+      "es2ko": 2,
+      "zh2ko": 2
+    },
+    "total_prompt_tokens": 2528,
+    "total_completion_tokens": 156
+  },
+  "comparison_to_7b": {
+    "identical_message_lists": 10,
+    "same_translation_strings": 6,
+    "different_translation_strings": 4,
+    "configuration_differences": {
+      "model": [
+        "Qwen/Qwen2.5-Coder-7B-Instruct",
+        "Qwen/Qwen2.5-Coder-32B-Instruct"
+      ],
+      "gpu_memory_utilization": [
+        0.45,
+        0.9
+      ]
+    },
+    "note": "String differences are not translation quality scores."
+  }
+}

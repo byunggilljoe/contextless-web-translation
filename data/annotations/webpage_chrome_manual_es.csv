@@ -1,0 +1,201 @@
+번호,URL,원래단어,어색한 단어,적합단어 1,적합단어 2,적합단어 3,exclude from user survey,include exp1,failure type,2en,2de,2zh
+0,https://www.amazon.com/Amazon-Essentials-Flannel-Pajama-Black/dp/B07BJKXRKD/?_encoding=UTF8&pd_rd_w=VuXrB&content-id=amzn1.sym.9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_p=9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_r=YW1PBAXYY5M56068QDS5&pd_rd_wg=uePGy&pd_rd_r=d204ef82-5d10-460c-8c06-46f26e6b4e54&ref_=pd_hp_d_btf_crs_zg_bs_7141123011,Enviar a,보내기,배송,,,,,ETC,Send to,Senden an,发送至
+,,Devoluciones,보고,반품,,,,,web-context failure,Returns,Rückgaben,返回
+,,Listas,기울기,목록,,,,,web-context failure,Lists,Listen,列表
+,,Vender,팔다,판매하기,,,,,unnatural verb,Sell,Verkaufen,卖
+,,Origen,기원,원산지,,,,,web-context failure,Origin,Herkunft,起源
+,,Tipo de cierre,폐쇄형,잠금 방식,web-context failure,,,,unnatural vocab,Closure type,Verschlussart,闭合类型
+1,https://www.amazon.com/crocs-Unisex-Classic-Black-Women/dp/B0014BYHNK/ref=sr_1_1?crid=ABAXBIBVZ705&dib=eyJ2IjoiMSJ9.Bp-YBJ-waAeaEe999dWnb4G4XZANdJ9AMs0sChqPeUhGN6yknuDPdPcS-pqbSknzPFH4zTeIFrz8SBvxQYcdJntrT4sVXLrmAv49ABsuLUzIUDR_vLFH4xRzer7wn0W8_GRx2VEoDFo9HQYFvNT3_l34q7wdyCnhgMRWW05GkR3xkM47_sYa_pRI552kArvuSQb3qHS2wvY7_YiZxQx6W2l_plwA2c_AKdy5aLLW0EkytndoePr7A54AghQsFzdc8_sLWJReu3IkLG_7-yrU_Pi3nbv6eOWpGbUrplHLTvc.XVR_LkGdSgZNokywmrzPfg78D04kqGDY1YImaqE3Nyo&dib_tag=se&keywords=Crocs+Unisex+Adult+Classic+Clog&qid=1734103282&sprefix=crocs+unisex+adult+classic+clog%2Caps%2C269&sr=8-1,Útil,유용한,유용함,,,,,unnatural adjective,Useful,Nützlich,有用
+,,Reportar,보고서,신고하기,,,,,web-context failure,Report,Bericht,报告
+,,Certificaciones sostenibles,지속 가능한 인증,지속 가능성 인증,,,,,unnatural adjective,Sustainable certifications,Nachhaltige Zertifizierungen,可持续认证
+,,Patrocinado,후원됨,광고,,,,,web-context failure,Sponsored,Gesponsert,赞助
+2,https://www.amazon.com/,Para limpieza,청소를 위해,청소용품,,,,,unnatural adverb,For cleaning,Zur Reinigung,用于清洁
+,,Almacenamiento para el hogar,홈 스토리지,수납용품,,,,,unnatural vocab,Home storage,Lagerung zu Hause,家庭存储
+,,Decoración del hogar,집 장식,장식용품,,,,,unnatural vocab,Home decoration,Heimdekoration,家居装饰
+3,reddit.com,Crear,만들다,새 글 작성,,,,,web-context failure,Create,Erstellen,创造
+4,https://www.nytimes.com/,U.S.,이,미국,,,,,web-context failure,U.S.,UNS.,我们。
+,,INTERNATIONAL,국제적인,국제판,,,,,unnatural adjective,INTERNATIONAL,INTERNATIONAL,国际的
+,,ESPAÑOL,스페인 사람,스페인어,,,,,web-context failure,SPANISH,SPANISCH,西班牙语
+,,中文,중국인,중국어,,,,,web-context failure,中文,中文,中文
+5,notion.com (byunggill todos),dom,돔,일요일,,,,,web-context failure,sun,Sonne,太阳
+,,lun,룬,월요일,,,,,web-context failure,mon,Montag,星期一
+,,mar,마르,화요일,,,,,web-context failure,sea,Meer,海
+,,Configuración,구성,설정,,,,,unnatural vocab,Configuration,Konfiguration,配置
+,,julio de 2025,2025. 8. 1,2025. 7. 1,,,,,ETC,July 2025,Juli 2025,2025年7月
+,,Papelera,큰 상자,휴지통,,,,,unnatural vocab,Bin,Bin,垃圾桶
+,,Añadir nueva,새로운 것을 추가하세요,새 페이지 추가,,,,,unnatural sentence,Add new,Neu hinzufügen,添加新
+6,https://en.wikipedia.org/wiki/Large_language_model,ocultar,위장하다,숨기기,,,,,unnatural verb,disguise,Verkleidung,伪装
+,,Buscar,찾아보다,검색,,,,,unnatural verb,Look for,Suchen,寻找
+,,Donaciones,기부금,기부하기,,,,,web-context failure,Donations,Spenden,捐赠
+,,Acceder,입장,로그인,,,,,web-context failure,Access,Zugang,使用权
+,,Modelo extenso de lenguaje,광범위한 언어 모델,대규모 언어 모델,,,,,unnatural vocab,Extensive language model,Umfangreiches Sprachmodell,广泛的语言模型
+7,https://x.com/home,Suscribirse,구독하다,구독하기,,,,,unnatural verb,Subscribe,Abonnieren,订阅
+,,¿Qué está pasando?,무슨 일이 일어나고 있는 거야?,지금 무슨 일이 일어나고 있나요?,,,,,unnatural sentence,What's going on?,Was ist los?,这是怎么回事？
+,,Para ti,당신을 위한,추천글,,,,,unnatural adjective,For you,Für Sie,为你
+,,Siguiendo,수행원,팔로잉,,,,,unnatural vocab,Following,Gefolgt,下列的
+9,https://www.ebay.com/,Recambios y accesorios,예비 부품 및 액세서리,부품 및 액세서리,,,,,unnatural vocab,Spare parts and accessories,Ersatzteile und Zubehör,备件和配件
+,,Cromos,크로모스,트레이딩 카드,,,,,ETC,Chromos,Chromos,克罗莫斯
+,,Comprar,구입하다,구매,,,,,unnatural verb,Buy,Kaufen,买
+12,https://www.imdb.com/title/tt23630030/?ref_=hm_inth_tt_i_4,In Theaters,극장에서,상영중,,,,TRUE,web-context failure,In Theaters,In den Kinos,在影院
+,,Action,행동,액션,,,,,web-context failure,Action,Aktion,行动
+,,Dirección,주소,감독,,,,,web-context failure,Address,Adresse,地址
+14,https://www.yelp.com/biz/yemeni-kabab-and-mediterranean-san-francisco-3?hrid=Wyh7Ja0In9sJuaQAA281Qw,Reclamado,회수됨,업체 소유자로 등록됨,,,TRUE,,web-context failure,Reclaimed,Zurückgefordert,回收
+,,Ver horarios,일정 보기,영업시간 보기,저장하기,,TRUE,,web-context failure,See schedules,Fahrpläne ansehen,查看时刻表
+,,Guardar,유지하다,저장하기,,,,,web-context failure,Keep,Halten,保持
+,,Más,더 나아가,더 보기,,,,,unnatural adverb,Further,Weiter,更远
+,,Acceder,입장,로그인,,,,,web-context failure,Access,Zugang,使用权
+,,Registrarse,등록하다,회원가입,,,,,web-context failure,Register,Registrieren,登记
+,,Inside,내부에,실내,,,TRUE,,unnatural adverb,Inside,Innen,里面
+,,Outside,밖의,실외,,,TRUE,,unnatural adverb,Outside,Draußen,外部
+15,https://www.mayoclinic.org/,A,에게,A,,,,,web-context failure,TO,ZU,到
+,,B,비,B,,,,,web-context failure,B,B,B
+,,C,기음,C,,,,,web-context failure,C,C,碳
+,,D,디,D,,,,,web-context failure,D,D,D
+,,E,그리고,E,,,,,web-context failure,AND,UND,和
+,,F,에프,F,,,,,web-context failure,F,F,F
+,,H,시간,H,,,,TRUE,web-context failure,H,H,哈
+,,I,에야디야,I,,,,,web-context failure,Yo,Du,哟
+,,J,제이,J,,,,,web-context failure,J,J,J
+,,L,엘,L,,,,,web-context failure,L,L,左
+,,M,중,M,,,,,web-context failure,M,M,米
+,,O,어느하나,O,,,,,web-context failure,EITHER,ENTWEDER,任何一个
+,,P,피,P,,,,,web-context failure,P,P,磷
+,,R,아르자형,R,,,,,web-context failure,R,R,R
+,,S,에스,S,,,,,web-context failure,S,S,秒
+,,T,티,T,,,,,web-context failure,T,T,T
+,,U,또는,U,,,,,web-context failure,OR,ODER,或者
+,,V,다섯,V,,,,,web-context failure,V,V,五
+,,Z,지,Z,,,,,web-context failure,Z,Z,Z
+,,Pide una cita,약속을 잡으세요,진료 예약,예약하기,,,,unnatural vocab,Make an appointment,Vereinbaren Sie einen Termin,预约
+,,Buscar,찾아보다,찾기,검색,,,,unnatural verb,Look for,Suchen,寻找
+18,airbnb.com,La Línea de la Concepción,임신의 선,라 리네아 데 라 콘셉시온,,,,TRUE,web-context failure,The Line of Conception,Die Linie der Empfängnis,受孕线
+,,Graciosa,재미있는,그라시오사,,,,,web-context failure,Funny,Lustig,有趣的
+,,Experiencias,체험담,체험,,,,,web-context failure,Experiences,Erlebnisse,体验
+,,Salida,출구,체크아웃,,,,,web-context failure,Exit,Ausfahrt,出口
+19,https://www.airbnb.com/rooms/18506534?adults=1&category_tag=Tag%3A8653&children=0&enable_m3_private_room=true&infants=0&pets=0&photo_id=965801101&search_mode=flex_destinations_search&check_in=2025-01-05&check_out=2025-01-10&source_impression_id=p3_1735030007_P3R_JdLIhKNJSjVE&previous_page_section_name=1000&federated_search_id=aa30c510-46eb-448d-9aed-d8379d84d471,Zona para trabajar,작업 영역,작업 공간,,,,,web-context failure,Work area,Arbeitsbereich,工作区
+,,Patio privado o balcón,개인 파티오 또는 발코니,전용 테라스 또는 발코니,,,,,unnatural vocab,Private patio or balcony,Private Terrasse oder Balkon,私人露台或阳台
+,,Se permite dejar el equipaje,짐을 맡기는 것은 허용됩니다,수하물 보관 가능,,,,,unnatural sentence,Leaving luggage is allowed,Gepäckablage ist erlaubt,允许寄存行李
+,,L,엘,월,,,,,web-context failure,L,L,左
+,,M,중,화,,,,,web-context failure,M,M,米
+20,linkedin.com,Yo,그들,나,,,,,web-context failure,I,ICH,我
+,,Mi red,미 레드,내 네트워크,,,,,web-context failure,My network,Mein Netzwerk,我的网络
+,,Visualizaciones del perfil,프로필 보기,프로필 조회수,,,,,web-context failure,Profile views,Profilansichten,个人资料视图
+,,Para negocios,비즈니스를 위해,기업용,,,,,unnatural adverb,For business,Für Unternehmen,对于企业
+,,Enviar,보내다,보내기,,,,,unnatural verb,Send,Schicken,发送
+,,Compartir,공유하다,공유,,,,,unnatural verb,Share,Aktie,分享
+,,Recomendar,추천하다,추천,,,,,unnatural verb,Recommend,Empfehlen,推荐
+,,Seguir,따르다,팔로우,,,,,unnatural verb,Continue,Weitermachen,继续
+21,whatsapp.com/?lang=en,Características,형질,기능,,,,,web-context failure,Characteristics,Eigenschaften,特征
+,,Privacidad,은둔,개인정보 보호,,,,,web-context failure,Privacy,Datenschutz,隐私
+,,Para empresas,기업을 위해,기업용,,,,,web-context failure,For companies,Für Unternehmen,对于公司
+,,Descargar,해고하다,다운로드,,,,,web-context failure,Discharge,Entladung,释放
+22,similarweb.com,Soluciones,솔션,솔루션,,,,,unnatural vocab,Solutions,Lösungen,解决方案
+,,Recursos,자원,자료,,,,,unnatural vocab,Resources,Ressourcen,资源
+,,Precios,물가,가격,,,,,unnatural vocab,Prices,Preise,价格
+,,Consigue información,정보를 얻으세요,정보 알아보기,,,,,unnatural sentence,Get information,Informationen erhalten,获取信息
+,,Clasificaciones,분류,랭킹,,,,,web-context failure,Classifications,Klassifikationen,分类
+,,Leadership,지도,리더십,,,,,web-context failure,Leadership,Führung,领导
+,,Carreras,경마,채용 정보,,,,,web-context failure,Racing,Rennen,赛车
+23,duckduckgo.com,MAC,스코틀랜드 사람,MAC,맥,,,,web-context failure,MAC,MAC,苹果
+,,Android,기계적 인조 인간,안드로이드,Android,,,,web-context failure,Android,Android,安卓
+,,Edge,가장자리,엣지,Edge,,,,web-context failure,Edge,Rand,边缘
+25,aliexpress.com,Packs de ofertas,오퍼 팩,혜택 팩,,,,,unnatural vocab,Offer packs,Angebotspakete,优惠包
+,,Feed,밥을 먹이다,피드,,,,,web-context failure,Feed,Füttern,喂养
+,,Cabello y pelucas,머리카락과 가발,헤어 & 가발,,,,,unnatural vocab,Hair and wigs,Haare und Perücken,头发和假发
+,,Accesorios,부속품,액세서리,,,,,unnatural vocab,Accessories,Zubehör,配件
+,,Más,더 나아가,더보기,,,,,unnatural vocab,Further,Weiter,更远
+26,canva.com,Diseño,설계,디자인,,,,,unnatural vocab,Design,Design,设计
+,,Planes y precios,계획 및 가격,요금제 및 가격,,,,,web-context failure,Plans and prices,Pläne und Preise,计划和价格
+,,Aprender,배우다,학습하기,,,,,unnatural verb,Learn,Lernen,学习
+,,Generador de texto curvo,곡선 텍스트 생성기,곡선 텍스트 생성,,,,,unnatural vocab,Curved Text Generator,Generator für gebogenen Text,曲线文本生成器
+,,Más recursos,더 많은 리소스,추가 리소스,,,,,unnatural vocab,More resources,Weitere Ressourcen,更多资源
+,,Explorar,탐구하다,둘러보기,,,,,unnatural verb,Explore,Erkunden,探索
+,,Descargar,해고하다,다운로드,,,,,web-context failure,Discharge,Entladung,释放
+27,https://open.spotify.com/,Tu biblioteca,귀하의 도서관,내 라이브러리,,,,,web-context failure,Your library,Ihre Bibliothek,你的图书馆
+,,Crea tu primera lista,첫 번째 목록을 만들어 보세요,첫 재생목록을 만들어보세요,,,,,web-context failure,Create your first list,Erstellen Sie Ihre erste Liste,创建您的第一个列表
+,,Legal,합법적인,법적 고지,,,,,web-context failure,Legal,Rechtliches,合法的
+28,https://telegram.org/?setln=en,Moderación,절도,중재,,,,,web-context failure,Moderation,Mäßigung,适度
+,,Twitter,지저귀다,트위터,,,,,web-context failure,Twitter,Twitter,叽叽喳喳
+,,ES,이다,ES,,,,,web-context failure,IS,IST,是
+,,Simple,단순한,간단함,,,,,unnatural adjective,Simple,Einfach,简单的
+,,Privado,사적인,개인화,,,,,unnatural adjective,Private,Privat,私人的
+,,Sincronizado,동기화됨,동기화,,,,,unnatural adjective,Synchronized,Synchronisiert,同步
+,,Rápido,빠른,빠름,,,,,unnatural adjective,Fast,Schnell,快速地
+,,Poderoso,강한,강력함,,,,,unnatural adjective,Powerful,Leistungsstark,强大的
+,,Abierto,열려 있는,개방형,,,,,unnatural adjective,Open,Offen,打开
+,,Seguro,확신하는,안전함,,,,,unnatural adjective,Sure,Sicher,当然
+29,https://www.booking.com/hotel/jp/hotel-she-kyoto.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaH2IAQGYARe4ARfIAQzYAQHoAQH4AQyIAgGoAgO4AsTcs7sGwAIB0gIkODMzNDEwYjAtYmEyZi00ZGY0LTg5MWYtMjk2NWMwNmI1MTZj2AIG4AIB&sid=f0428e17b9e6afc6c0a4fb419bfcfada&all_sr_blocks=171061002_389976121_0_0_0&checkin=2024-12-28&checkout=2024-12-31&dest_id=-235402&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=4&highlighted_blocks=171061002_389976121_0_0_0&hpos=4&matching_block_id=171061002_389976121_0_0_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=171061002_389976121_0_0_0__7012756&srepoch=1735192897&srpvid=8fa5294792500313&type=total&ucfs=1&,Registra tu alojamiento,숙박 등록하기,숙소 등록하기,,,,,unnatural vocab,Register your accommodation,Registrieren Sie Ihre Unterkunft,登记您的住宿
+,,Hazte una cuenta,계정을 생성하세요,회원가입 하기,,,,,unnatural sentence,Create an account,Ein Konto erstellen,创建一个帐户
+,,Buscar,찾아보다,검색,,,,,unnatural verb,Look for,Suchen,寻找
+,,Inicio,시작,홈,,,,,unnatural vocab,Start,Start,开始
+,,Normas de la casa,하우스 규칙,숙소 이용 규칙,,,,,unnatural vocab,House rules,Hausregeln,房屋规则
+,,A tener en cuenta,고려하다,참고 사항,,,,,unnatural verb,To take into account,Zu berücksichtigen,考虑到
+,,Fabuloso,굉장한,매우 좋음,,,,,unnatural adjective,Fabulous,Fabelhaft,太棒了
+,,Igualamos el precio,우리는 가격을 맞춰드립니다,최저가 보장,,,,,unnatural sentence,We match the price,Wir passen den Preis an,我们匹配价格
+32,https://www.adobe.com/#,Comprar para,구매하다,구매,,,,,unnatural verb,Buy for,Kaufen für,购买
+,,Acrobat,곡예사,아크로뱃,,,,,web-context failure,Acrobat,Akrobat,杂技演员
+,,Ver planes y precios,계획 및 가격 보기,요금제 및 가격 보기,,,,,unnatural vocab,See plans and prices,Pläne und Preise ansehen,查看计划和价格
+,,Para organizaciones sin ánimo de lucro,비영리 단체의 경우,비영리 단체,,,,,unnatural adverb,For non-profit organizations,Für gemeinnützige Organisationen,对于非营利组织
+,,Commerce,상업,커머스,,,,,unnatural vocab,Commerce,Handel,商业
+,,Software original,소프트웨어 원본,정품 소프트웨어,,,,,web-context failure,Original software,Originalsoftware,原版软件
+34,https://www.ecosia.org/,Navegador Ecosia,에코시아 네비게이터,Ecosia 브라우저,,,,,web-context failure,Ecosia Navigator,Ecosia Navigator,Ecosia 导航器
+,,SOBRE,에 대한,회사 소개,,,,,unnatural adjective,ABOUT,UM,关于
+,,LEGAL,합법적인,법적 정보,,,,,unnatural adjective,LEGAL,RECHTLICHES,合法的
+,,Ayuda,지원,도움말,,,,,unnatural vocab,Aid,Hilfe,援助
+,,Prensa,누르다,언론 보도,,,,,web-context failure,Press,Drücken,按
+,,Carreras,경매,채용 정보,,,,,web-context failure,Racing,Rennen,赛车
+35,https://www.usps.com/,Regístrese gratis,무료로 등록하세요,무료로 가입하세요,,,,,unnatural vocab,Register for free,Kostenlos registrieren,免费注册
+,,Regístrese,등록하다,가입하기,,,,,unnatural verb,Register,Registrieren,登记
+,,Buscar o Rastrear Paquetes,패키지 검색 또는 추적,소포 조회 및 추적,,,,,unnatural vocab,Search or Track Packages,Pakete suchen oder verfolgen,搜索或追踪包裹
+,,Enviar,보내다,보내기,,,,,unnatural verb,Send,Schicken,发送
+,,Recibir,받다,받기,,,,,unnatural verb,Receive,Erhalten,收到
+,,Comprar,구입하다,구매하기,,,,,unnatural verb,Buy,Kaufen,买
+37,https://kr.shein.com/INAWLY-Plus-Size-Autumn-Winter-Casual-Contrast-Color-Block-Letter-Print-Hoodie-review-47213115.html?mall_code=1&goods_spu=z24030571741&sku=sz2403057174141946&store_code=2114719953&isLowestPriceProductOfBuyBox=0&mainProductSameGroupId=&cat_id=2056&sku_code=&isTrusted=true&_vts=1735194296381,Tallas Y Dimensiones,크기 및 치수,사이즈 및 치수,,,,,unnatural vocab,Sizes and Dimensions,Größen und Abmessungen,尺寸和尺寸
+,,Todos los artículos,모든 기사,모든 상품,,,,,web-context failure,All articles,Alle Artikel,所有文章
+,,Seguir,계속하다,팔로우,,,,,web-context failure,Continue,Weitermachen,继续
+41,https://www.xbox.com/en-CA?source=lp,Ahorra hasta un 67% en una selección de juegos Xbox,선택한 Xbox 게임에서 최대 67% 할인,엄선된 Xbox 게임을 최대 67% 할인,,,,,unnatural vocab,Save up to 67% on select Xbox games,Sparen Sie bis zu 67 % bei ausgewählten Xbox-Spielen,指定 Xbox 游戏最高可享 67% 折扣
+,,Juegos,계략,게임,,,,,web-context failure,Games,Spiele,游戏
+,,Juega,놀다,플레이,,,,,unnatural vocab,Play,Spielen,玩
+,,Carro,자동차,장바구니,,,,,web-context failure,Car,Auto,车
+43,https://www.playstation.com/en-us/games/lego-horizon-adventures/,Juegos,계략,게임,,,,,web-context failure,Games,Spiele,游戏
+,,Accesorios,부속품,액세서리,,,,,unnatural vocab,Accessories,Zubehör,配件
+,,Tienda,가게,스토어,,,,,unnatural vocab,Store,Speichern,店铺
+,,Asistencia,출석,지원,,,,,unnatural vocab,Attendance,Teilnahme,出勤
+,,Buscar,찾아보다,검색,,,,,unnatural verb,Look for,Suchen,寻找
+,,Acerca de,에 대한,소개,,,,,unnatural vocab,About,Um,关于
+,,Conectar,연결하다,연결,,,,,unnatural verb,Connect,Verbinden,连接
+,,Recursos,자원,자료실,,,,,unnatural vocab,Resources,Ressourcen,资源
+,,Clasificaciones por edad,연령 분류,연령 등급,,,,,unnatural vocab,Age classifications,Altersklassifizierungen,年龄分类
+,,Desarrolladores,개발자,개발자 센터,,,,,unnatural vocab,Developers,Entwickler,开发人员
+47,https://www.riotgames.com/en,Puestos disponibles,사용 가능한 위치,채용 공고,,,,,unnatural vocab,Available positions,Offene Stellen,空缺职位
+,,Oficinas,부역,지사,,,,,unnatural vocab,Offices,Büros,办公室
+,,Explorar carreras profesionales,진로 탐색,채용 기회 살펴보기,,,,,unnatural vocab,Explore careers,Karrieremöglichkeiten entdecken,探索职业
+,,PRENSA,누르다,보도 자료,,,,,unnatural vocab,PRESS,DRÜCKEN,按
+51,https://www.xfinity.com/national/,Empleos,직원,채용 정보,,,,,web-context failure,Jobs,Jobs,工作
+,,Anúnciate con nosotros,우리와 함께 말하다,광고 문의,,,,,web-context failure,Advertise with us,Werben Sie mit uns,广告合作
+,,Acuerdo del usuario,사용자 계정,사용자 계약,,,,,unnatural vocab,User Agreement,Benutzervereinbarung,用户协议
+52,https://www.investing.com/etfs/spdr-s-p-500,Acciones,행위,주식,,,,,web-context failure,Actions,Aktionen,行动
+,,M. primas,M. 사흔들,원자재,,,,,web-context failure,M. cousins,M. Cousins,M. 表兄弟
+,,Fondos,자금,펀드,,,,,unnatural vocab,Funds,Mittel,资金
+,,Var.,변형,변동,,,,,web-context failure,Var.,Var.,变种
+,,Último,마지막,최종,,,,,unnatural vocab,Last,Zuletzt,最后的
+,,Mínimo,최저한의,최저,,,,,unnatural vocab,Minimum,Minimum,最低限度
+,,US 500,미국 500,S&P 500,,,,,unnatural vocab,US 500,US 500,美国 500
+,,EMPECEMOS,시작해 봅시다,시작해 보세요,,,,,unnatural sentence,LET'S GET STARTED,LOS GEHT'S,让我们开始吧
+55,https://www.skyscanner.co.kr/,Desde,에서,출발지,,,,TRUE,unnatural adverb,From,Aus,从
+,,A,에게,도착지,,,,,unnatural adverb,TO,ZU,到
+,,Ida,아이다,출발편,,,,,ETC,Ida,Ida,艾达
+,,Vuelta,무릎,돌아오는 편,,,,,ETC,Lap,Schoß,圈数
+59,https://www.binance.com/en/price/bitcoin,Square,정사각형,스퀘어,,,,,web-context failure,Square,Quadrat,正方形
+,,Más,더 나아가,더보기,,,,,unnatural adverb,Further,Weiter,更远
+,,Pagar,얻다,결제하기,,,,,web-context failure,Pay,Zahlen,支付
+,,Convertir,가게,전환하기,,,,,web-context failure,Convert,Konvertieren,转变
+,,Explorar,보내다,탐색하기,,,,,web-context failure,Explore,Erkunden,探索
+60,https://www.speedtest.net/,Español,스페인 사람,스페인어,,,,,web-context failure,Spanish,Spanisch,西班牙语
+,,Learn,배우다,학습하기,,,,,unnatural verb,Learn,Lernen,学习
+,,Acerca de,에 대한,정보,,,,,unnatural vocab,About,Um,关于
+65,https://soundcloud.com/user-286171253-368148128/eatin-good,Inicio,시작,홈,,,,,unnatural vocab,Start,Start,开始
+,,Canal,운하,채널,,,,,web-context failure,Channel,Kanal,渠道
+,,Biblioteca,도서관,라이브러리,,,,,web-context failure,Library,Bibliothek,图书馆
+,,Subir,올라가다,업로드,,,,,web-context failure,Increase,Zunahme,增加
+,,Crea tu cuenta,계정을 생성하세요,계정 만들기,,,,,unnatural verb,Create your account,Erstellen Sie Ihr Konto,创建您的帐户

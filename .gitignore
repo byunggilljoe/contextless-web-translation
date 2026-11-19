@@ -1,0 +1,13 @@
+__pycache__/
+.venv/
+.env
+.env.*
+!.env.example
+outputs/
+*.zip
+*.tar.gz
+# Override the original project's broad data/ ignore when this folder is nested.
+!data/
+!data/**
+# Browser snapshots are shipped in the research ZIP; keep out of Git by default.
+data/html/
