@@ -57,7 +57,8 @@
           "height": 29
         }
       },
-      "scope": "Only this item is replaced in each screenshot; other page text is unchanged."
+      "scope": "Only this item is replaced in each screenshot; other page text is unchanged.",
+      "distributed_html_sha256": "07b08075e7b5d5131e5c203d3a20d6c68f608ac4f33c4d985a1a6d0919f0847a"
     },
     {
       "id": "de2ko:1",
@@ -101,7 +102,8 @@
           "height": 16
         }
       },
-      "scope": "Only this item is replaced in each screenshot; other page text is unchanged."
+      "scope": "Only this item is replaced in each screenshot; other page text is unchanged.",
+      "distributed_html_sha256": "d25ed3a308ff9cd921508de38e9098bf14fe7d263d1cb0f05573f855535bee0b"
     },
     {
       "id": "de2ko:2",
@@ -145,7 +147,8 @@
           "height": 16
         }
       },
-      "scope": "Only this item is replaced in each screenshot; other page text is unchanged."
+      "scope": "Only this item is replaced in each screenshot; other page text is unchanged.",
+      "distributed_html_sha256": "d25ed3a308ff9cd921508de38e9098bf14fe7d263d1cb0f05573f855535bee0b"
     },
     {
       "id": "es2ko:2",
@@ -189,7 +192,8 @@
           "height": 14
         }
       },
-      "scope": "Only this item is replaced in each screenshot; other page text is unchanged."
+      "scope": "Only this item is replaced in each screenshot; other page text is unchanged.",
+      "distributed_html_sha256": "399b09601f046a74d7a6bba72885426451afa842f9c0e622fa7a2504180e65ae"
     },
     {
       "id": "es2ko:1",
@@ -233,7 +237,8 @@
           "height": 14
         }
       },
-      "scope": "Only this item is replaced in each screenshot; other page text is unchanged."
+      "scope": "Only this item is replaced in each screenshot; other page text is unchanged.",
+      "distributed_html_sha256": "399b09601f046a74d7a6bba72885426451afa842f9c0e622fa7a2504180e65ae"
     }
   ],
   "overviews": {
@@ -253,5 +258,6 @@
     "resources": "archived page-local CSS and images",
     "highlighting": "orange: source; blue: contextless; green: contextful; dark target text for contrast"
   },
-  "scope": "Five archived-page examples, each with source/contextless/contextful screenshots. Only one target is replaced per example. Page overviews show original text."
+  "scope": "Five archived-page examples, each with source/contextless/contextful screenshots. Only one target is replaced per example. Page overviews show original text.",
+  "public_release_note": "Screenshots were captured from archived HTML. The distributed HTML has inline credential-like values redacted; original capture hashes and distributed hashes are recorded separately."
 }

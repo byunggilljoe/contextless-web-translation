@@ -211,6 +211,8 @@ python validate.py --check-targets
 
 GPU 실행에 사용한 버전은 `requirements-vllm.txt`에 고정했습니다. 외부 상용 API와 논문의 품질·속도 표 전체는 검증하지 않았습니다. [검증 내역](VALIDATION.md)
 
+공개본의 HTML 31개에는 웹사이트 토큰·식별자 형태의 값 일부가 `REDACTED`로 치환되어 있습니다. 번역 대상과 참조 번역은 유지했으며, 정제 후 좌우 512문자 이내의 벤치마크 문맥도 동일합니다. [HTML 변경 기록](data/public_redactions.json)
+
 ## 인용
 
 이 데이터셋이나 코드를 연구에 사용하셨다면 다음 원논문을 인용해 주세요. [원논문 DOI](https://doi.org/10.1016/j.eswa.2026.133227)

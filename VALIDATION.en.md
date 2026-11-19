@@ -49,3 +49,7 @@ Each of the five README examples has source, contextless, and contextful screens
 Commercial API calls and the paper's complete quality/timing tables have not been verified. The integration tests in `tests/` use a mock server. The files in `validation/` contain actual GPU inference results for the same 10 items with each model.
 
 When comparing experiments, record model revisions, GPU/server environments, library versions, and generation settings. Run settings and installed package versions are available in each result's `.meta.json`.
+
+## Public-release credential checks
+
+The complete Git history and every Release attachment were scanned. No project API key or GitHub credential values matched. Credential-like values in archived HTML were replaced and rescanned. Cleansed HTML is identical for 28 of the 31 modified pages; the 16 items on the other three pages also retain identical 512-character context windows per side.

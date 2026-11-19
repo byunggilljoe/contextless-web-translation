@@ -28,3 +28,5 @@ The packager updates `SHA256SUMS` and includes HTML. It excludes `outputs/`, vir
 `.gitignore` excludes `data/html/`. Code and annotations can be managed in Git while HTML is distributed in the dataset ZIP. Change that rule to include HTML in Git.
 
 No distribution license has been specified. For public distribution, define and document the terms for the code and collected webpage data. HTML contains scripts and embedded resources; page sources are listed in `data/pages.json`.
+
+Re-exporting the original captures can restore website tokens. Before public distribution, scan HTML for credential-like values, apply required redactions, and update the hashes in `data/pages.json` and `SHA256SUMS`.

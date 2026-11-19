@@ -53,5 +53,10 @@
       "source_sha256": "3e872409e739ca095ce5520b56f7081e51fe93af3fb34dd18bc35f2bdec480c3",
       "exported_sha256": "3e872409e739ca095ce5520b56f7081e51fe93af3fb34dd18bc35f2bdec480c3"
     }
-  ]
+  ],
+  "public_release_sanitization": {
+    "manifest": "data/public_redactions.json",
+    "html_files_modified": 31,
+    "translation_annotations_changed": false
+  }
 }

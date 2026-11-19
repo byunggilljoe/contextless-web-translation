@@ -211,6 +211,8 @@ Validation used Python 3.12, Beautiful Soup 4.12.3, and soupsieve 2.6. Data chec
 
 The tested GPU package versions are pinned in `requirements-vllm.txt`. Commercial API inference and the paper's complete quality/timing tables remain unverified. [Validation details](VALIDATION.en.md)
 
+In this public release, credential-like website token and identifier values in 31 HTML snapshots are replaced with `REDACTED`. Translation targets, references, and cleansed benchmark windows up to 512 characters per side are unchanged. [HTML redaction record](data/public_redactions.json)
+
 ## Citation
 
 If you use this dataset or code in your research, please cite the original paper. [Paper DOI](https://doi.org/10.1016/j.eswa.2026.133227)

@@ -28,3 +28,5 @@ python maintainer/package.py --output ../reproduction_bundle_new.zip
 `.gitignore`는 `data/html/`을 제외합니다. 코드와 주석을 Git으로 관리하고 HTML은 데이터 ZIP으로 배포할 수 있습니다. HTML을 Git에 포함하려면 해당 규칙을 변경합니다.
 
 배포 라이선스는 미지정입니다. 공개 시 코드와 수집 웹페이지 데이터의 이용 조건을 정해 안내합니다. HTML에는 스크립트와 내장 리소스가 포함되며, 출처는 `data/pages.json`에서 확인할 수 있습니다.
+
+원본에서 다시 추출하면 웹사이트 토큰이 복원될 수 있습니다. 공개 전에는 HTML을 포함해 비밀값을 검사하고, 필요한 치환 및 `data/pages.json` 해시·`SHA256SUMS` 갱신을 수행합니다.
