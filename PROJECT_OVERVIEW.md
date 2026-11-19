@@ -26,8 +26,8 @@ HTML의 주변 문맥으로 번역 대상의 의미를 판별하고, 대상 텍�
 | `translate_page.py` | 텍스트 노드 선택, 블록 문맥 구성, 병렬 번역, DOM 반영 |
 | `validate.py` | 데이터 수·경로·해시·대상 매칭 검사 |
 | `tests/` | 모의 API를 사용하는 통합 테스트 |
+| `examples/` | README의 번역 전·후 스크린샷과 출처 정보 |
 | `validation/` | 7B·32B 로컬 GPU 추론 결과·설정·검토 내역 |
-| `reference/` | 품질·캐시·속도 실험의 참고 구현 |
 | `maintainer/` | 데이터 추출과 ZIP 생성 도구 |
 
 ## 페이지 번역

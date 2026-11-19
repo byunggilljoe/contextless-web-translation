@@ -4,13 +4,13 @@
 
 ## 데이터 추출
 
-연구 저장소에서 데이터와 참고 구현을 추출합니다.
+연구 저장소에서 데이터와 HTML 정제 코드을 추출합니다.
 
 ```bash
 python maintainer/export_from_project.py --project-root /path/to/research-project
 ```
 
-기준 메타데이터는 실험용 JSON이며, 주석 CSV와의 차이는 `data/annotation_differences.json`에 기록합니다. `data/provenance.json`에는 기준 Git 리비전, 실제 파일 해시, 사설 API 호스트 치환 내역을 기록합니다.
+기준 메타데이터는 실험용 JSON이며, 주석 CSV와의 차이는 `data/annotation_differences.json`에 기록합니다. `data/provenance.json`에는 기준 Git 리비전, 실제 파일 해시을 기록합니다.
 
 ## ZIP 생성
 

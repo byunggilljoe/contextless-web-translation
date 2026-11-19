@@ -1,4 +1,4 @@
-"""Export only benchmark inputs and selected original implementation sources.
+"""Export benchmark inputs and the runnable HTML preprocessing module.
 
 Run from any directory: python export_from_project.py --project-root /path/to/project
 No credentials, participant responses, resources, MHTML, or model files are copied.
@@ -7,28 +7,12 @@ import argparse
 import csv
 import hashlib
 import json
-import re
 import shutil
 import subprocess
 from collections import Counter
 from pathlib import Path
 
 BUNDLE = Path(__file__).resolve().parents[1]
-SOURCES = [
-    'common/process_html.py',
-    'preprocess_data.py',
-    'configs/gen_params.py',
-    'translate_target_string/ray_version.py',
-    'translate_target_string/ray_version_no_prompt_context.py',
-    'translate_all/main.py',
-    'translate_all/main_vllm.py',
-    'translate_all/timing.py',
-    'translate_all/animation.py',
-    'translate_all/speedup_tests/huggingface_use_cache_test.py',
-    'survey_llm/json_answer_to_csv.py',
-    'script/run_translate_target_cleanse.sh',
-    'script/run_speed_test.sh',
-]
 
 
 def digest(path):
@@ -93,22 +77,11 @@ def export(project):
     dest.write_text(''.join(json.dumps(r, ensure_ascii=False) + '\n' for r in records), encoding='utf-8')
     dump(BUNDLE / 'data/pages.json', list(pages.values()))
     dump(BUNDLE / 'data/annotation_differences.json', differences)
-    for rel in SOURCES:
-        dest = BUNDLE / 'reference' / rel
-        dest.parent.mkdir(parents=True, exist_ok=True)
-        content = (project / rel).read_text(encoding='utf-8')
-        # One current working-tree file contains a private API host fallback.
-        # Preserve the port/path while replacing private network addresses.
-        redacted, count = re.subn(r'(?<=://)(?:10(?:\.\d{1,3}){3}|192\.168(?:\.\d{1,3}){2}|172\.(?:1[6-9]|2\d|3[01])(?:\.\d{1,3}){2})',
-                                 '127.0.0.1', content)
-        if count:
-            dest.write_text(redacted, encoding='utf-8')
-        else:
-            shutil.copyfile(project / rel, dest)
-        provenance.append({'source': rel, 'source_sha256': digest(project / rel),
-                           'exported_sha256': digest(dest), 'private_hosts_redacted': count})
-    # This exact source file is also the executable preprocessing implementation.
-    shutil.copyfile(project / 'common/process_html.py', BUNDLE / 'process_html.py')
+    rel = 'common/process_html.py'
+    dest = BUNDLE / 'process_html.py'
+    shutil.copyfile(project / rel, dest)
+    provenance.append({'source': rel, 'source_sha256': digest(project / rel),
+                       'exported_sha256': digest(dest)})
     revision = subprocess.run(['git', '-C', str(project), 'rev-parse', 'HEAD'],
                               check=True, capture_output=True, text=True).stdout.strip()
     dump(BUNDLE / 'data/provenance.json', {

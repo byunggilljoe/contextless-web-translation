@@ -140,4 +140,4 @@ The trailing spaces explain the matching failures for `de2ko:5` and `de2ko:83`. 
 
 ## HTML snapshots
 
-HTML bytes are preserved for comparisons with and without cleansing. Snapshots contain page scripts and embedded resources. The experiment runners parse HTML without executing JavaScript or fetching pages. External CSS, images, fonts, screenshots, and MHTML are not included, so browser rendering can differ from the source website.
+HTML bytes are preserved for comparisons with and without cleansing. Snapshots contain page scripts and embedded resources. The experiment runners parse HTML without executing JavaScript or fetching pages. External CSS, images, fonts, and MHTML needed for rendering are not included, so browser rendering can differ from the source website. Screenshots of the README translation examples are in `examples/`.

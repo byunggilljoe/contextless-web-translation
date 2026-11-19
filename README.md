@@ -4,6 +4,31 @@
 
 HTML을 정제한 뒤 번역 대상과 주변 문맥을 모델에 전달하여 한국어로 번역합니다. 문맥 크기·정제 유무·모델을 바꿔 비교하거나, 페이지의 선택한 텍스트 노드만 병렬 번역할 수 있습니다.
 
+## 번역 예시
+
+동일한 문맥 128문자와 최대 생성 32토큰으로 실행한 `Qwen2.5-Coder-32B-Instruct` 결과입니다. Chrome 번역은 데이터 수집 당시의 값입니다.
+
+| 항목 ID | 번역 전 원문 | Chrome 번역 | 32B 번역 후 | 수작업 참조 |
+|---|---|---|---|---|
+| en2ko:2 | dismiss | 해고하다 | 닫기 | 닫기 |
+| de2ko:1 | Stoffart | 스토파트 | 소재 | 원단 |
+| de2ko:2 | Herkunft | 기원 | 원산지 | 원산지 |
+| es2ko:2 | Devoluciones | 보고 | 반품 | 반품 |
+| es2ko:1 | Enviar a | 보내기 | 보내기 | 배송 |
+| zh2ko:2 | 面料类型 | 원단 종류 | 면단 종류 | 소재 |
+
+`dismiss`의 닫기 동작과 `Devoluciones`의 반품 문맥을 반영한 결과가 있으며, `Enviar a`, `面料类型`처럼 참조에 못 미치는 결과도 있습니다. [전체 10건과 7B·32B 비교](validation/LOCAL_MODEL_32B.md)
+
+### 웹페이지의 번역 전·후
+
+수집한 독일어 상품 페이지(`de/0`)를 브라우저에서 렌더링한 화면입니다. `Stoffart`와 `Herkunft` 두 항목에 기록된 32B 번역을 적용했습니다. 번역 위치는 전에는 주황색, 후에는 초록색으로 표시했으며 다른 본문은 독일어로 유지됩니다.
+
+| 번역 전 | 번역 후 |
+|---|---|
+| ![번역 전 상품 정보: Stoffart, Herkunft](examples/product_details_before.png) | ![번역 후 상품 정보: 소재, 원산지](examples/product_details_after.png) |
+
+[상품 페이지 화면: 번역 전](examples/product_before.png) · [번역 후](examples/product_after.png) · [출처·대상 항목·렌더링 정보](examples/screenshots.json)
+
 ## 설치
 
 Python 3.10 이상이 필요합니다. 모든 명령은 ZIP의 `reproduction_bundle/` 또는 Git으로 복제한 프로젝트의 최상위 폴더에서 실행합니다.
@@ -17,7 +42,7 @@ python validate.py
 
 Windows PowerShell에서는 `.venv\Scripts\Activate.ps1`로 가상환경을 활성화합니다.
 
-[전체 데이터·코드 ZIP](https://github.com/byunggilljoe/contextless-web-translation/releases/tag/v1.0.0)에는 HTML 174개가 포함되어 있습니다. Git으로 받은 경우에는 ZIP의 `reproduction_bundle/data/html/`을 복제한 프로젝트의 `data/html/`로 복사한 뒤 검증합니다.
+[전체 데이터·코드 ZIP](https://github.com/byunggilljoe/contextless-web-translation/releases/latest)에는 HTML 174개가 포함되어 있습니다. Git으로 받은 경우에는 ZIP의 `reproduction_bundle/data/html/`을 복제한 프로젝트의 `data/html/`로 복사한 뒤 검증합니다.
 
 입력 프롬프트와 HTML 정제 결과는 다음 명령으로 확인합니다.
 
@@ -148,4 +173,4 @@ python validate.py --check-targets
 
 GPU 실행에 사용한 버전은 `requirements-vllm.txt`에 고정했습니다. 외부 상용 API와 논문의 품질·속도 표 전체는 검증하지 않았습니다. [검증 내역](VALIDATION.md)
 
-[코드 구조](PROJECT_OVERVIEW.md) · [참고 구현](reference/README.md)
+[코드 구조](PROJECT_OVERVIEW.md)

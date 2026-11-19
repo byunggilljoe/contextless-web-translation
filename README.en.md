@@ -4,6 +4,31 @@ Dataset and translation experiments for **“Overcoming contextless web markup t
 
 The method cleans HTML and translates selected strings using their surrounding markup as context. Experiments support different models, context sizes, cleansing settings, and parallel translation of selected page nodes.
 
+## Translation examples
+
+These are actual `Qwen2.5-Coder-32B-Instruct` results with 128 context characters per side and a 32-token generation limit. Chrome translations are the values collected with the dataset.
+
+| Item ID | Source before translation | Chrome translation | 32B output after translation | Manual reference |
+|---|---|---|---|---|
+| en2ko:2 | dismiss | 해고하다 | 닫기 | 닫기 |
+| de2ko:1 | Stoffart | 스토파트 | 소재 | 원단 |
+| de2ko:2 | Herkunft | 기원 | 원산지 | 원산지 |
+| es2ko:2 | Devoluciones | 보고 | 반품 | 반품 |
+| es2ko:1 | Enviar a | 보내기 | 보내기 | 배송 |
+| zh2ko:2 | 面料类型 | 원단 종류 | 면단 종류 | 소재 |
+
+The outputs capture the dismiss action and returns context in some items, while `Enviar a` and `面料类型` remain below the manual references. [All 10 items and the 7B/32B comparison](validation/LOCAL_MODEL_32B.en.md)
+
+### Before and after on the webpage
+
+These browser screenshots render the archived German product page (`de/0`). The recorded 32B translations are applied only to the `Stoffart` and `Herkunft` labels. Orange marks the targets before translation; green marks them after translation. Other page text remains in German.
+
+| Before translation | After translation |
+|---|---|
+| ![Product facts before translation: Stoffart, Herkunft](examples/product_details_before.png) | ![Product facts after translation: 소재, 원산지](examples/product_details_after.png) |
+
+[Product page before translation](examples/product_before.png) · [After translation](examples/product_after.png) · [Source, targets, and rendering metadata](examples/screenshots.json)
+
 ## Installation
 
 Requires Python 3.10+. Run all commands from the extracted `reproduction_bundle/` directory or the root of your Git checkout.
@@ -17,7 +42,7 @@ python validate.py
 
 On Windows PowerShell, activate the environment with `.venv\Scripts\Activate.ps1`.
 
-The [complete dataset and code ZIP](https://github.com/byunggilljoe/contextless-web-translation/releases/tag/v1.0.0) includes all 174 HTML snapshots. For a Git checkout, copy `reproduction_bundle/data/html/` from the ZIP to `data/html/` in your checkout before running validation.
+The [complete dataset and code ZIP](https://github.com/byunggilljoe/contextless-web-translation/releases/latest) includes all 174 HTML snapshots. For a Git checkout, copy `reproduction_bundle/data/html/` from the ZIP to `data/html/` in your checkout before running validation.
 
 Inspect translation prompts and cleansed HTML:
 
@@ -148,4 +173,4 @@ Validation used Python 3.12, Beautiful Soup 4.12.3, and soupsieve 2.6. Data chec
 
 The tested GPU package versions are pinned in `requirements-vllm.txt`. Commercial API inference and the paper's complete quality/timing tables remain unverified. [Validation details](VALIDATION.en.md)
 
-[Code overview](PROJECT_OVERVIEW.en.md) · [Reference implementations](reference/README.md)
+[Code overview](PROJECT_OVERVIEW.en.md)

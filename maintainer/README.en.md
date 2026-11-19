@@ -4,13 +4,13 @@
 
 ## Dataset export
 
-Export the dataset and reference implementations from the research repository:
+Export the dataset and HTML preprocessing code from the research repository:
 
 ```bash
 python maintainer/export_from_project.py --project-root /path/to/research-project
 ```
 
-Experimental JSON is the primary metadata source. Differences from annotation CSVs are recorded in `data/annotation_differences.json`. `data/provenance.json` records the source Git revision, actual file hashes, and replacements of private API hosts.
+Experimental JSON is the primary metadata source. Differences from annotation CSVs are recorded in `data/annotation_differences.json`. `data/provenance.json` records the source Git revision, actual file hashes.
 
 ## ZIP packaging
 

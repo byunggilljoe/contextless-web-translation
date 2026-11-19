@@ -28,7 +28,7 @@ The first command checks dataset structure and `SHA256SUMS`. The second also che
 python -m unittest discover -s tests -v
 ```
 
-All six integration tests passed. A local HTTP mock server checks translation and score persistence, authentication failures, malformed responses, token truncation, missing references, selected-node reinsertion, and overwrite protection. The Q&A user prompt is compared with the reference implementation's output.
+All six integration tests passed. A local HTTP mock server checks translation and score persistence, authentication failures, malformed responses, token truncation, missing references, selected-node reinsertion, and overwrite protection. The bare-text condition is checked to exclude HTML and reference translations from its input.
 
 Prompt generation, cleansing settings, context-window changes, and selected-node ID generation were also checked with actual HTML snapshots.
 

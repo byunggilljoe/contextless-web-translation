@@ -1,5 +1,4 @@
 """Exercise real CLIs against a local protocol stub; no external model is called."""
-import ast
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
 import os
@@ -14,8 +13,7 @@ from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from run import read_jsonl, qa_messages
-from process_html import inject_translate_tag, extract_translate_tag
+from run import read_jsonl
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -126,23 +124,18 @@ class OfflineTests(unittest.TestCase):
         self.assertEqual(read_jsonl(output)[0]['status'], 'dry_run')
         self.cli('translate', '--pair', 'en2ko', '--limit', 1, '--dry-run', '--output', output, expected=2)
 
-    def test_qa_user_prompt_matches_original_function(self):
-        # Execute only the original method, avoiding its service/GPU imports.
-        source = (ROOT / 'reference/translate_target_string/ray_version.py').read_text()
-        tree = ast.parse(source)
-        function = next(node for node in tree.body if isinstance(node, ast.FunctionDef)
-                        and node.name == 'translate_target_string')
-        namespace = {'SOURCE_LANG': 'English', 'TARGET_LANG': 'Korean', 'TRANSLATE_TAG': 'TRAN',
-                     'inject_translate_tag': inject_translate_tag,
-                     'extract_translate_tag': extract_translate_tag}
-        exec(compile(ast.Module(body=[function], type_ignores=[]), 'reference_method', 'exec'), namespace)
-        soup = BeautifulSoup('<html><body><a>comments</a></body></html>', 'html.parser')
-        expected = namespace['translate_target_string'](
-            soup, 'comments', lambda template, html: template.format(html=html, id=0), 128, 128)
-        marked = inject_translate_tag(soup, 'comments', 'TRAN')
-        fragment = extract_translate_tag(marked, 'TRAN_0', 128, 128)
-        actual = qa_messages({'source_language': 'en', 'target_language': 'ko'}, fragment)
-        self.assertEqual(actual[-1]['content'], expected)
+    def test_contextless_prompt_excludes_html_and_reference_translations(self):
+        output = self.directory / 'contextless.jsonl'
+        self.cli('prepare', '--pair', 'en2ko', '--limit', 1, '--mode', 'contextless',
+                 '--output', output)
+        row = read_jsonl(output)[0]
+        sample = read_jsonl(ROOT / 'data/samples.jsonl')[0]
+        prompt = '\n'.join(message['content'] for message in row['messages'])
+        self.assertEqual(row['status'], 'prepared')
+        self.assertIn(sample['original'], prompt)
+        self.assertNotIn('<html', prompt.lower())
+        self.assertNotIn(sample['chrome_translation'], prompt)
+        self.assertNotIn(sample['reference_translation'], prompt)
 
 
 if __name__ == '__main__':

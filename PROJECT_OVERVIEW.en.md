@@ -26,8 +26,8 @@ The method uses surrounding HTML to interpret a translation target and generates
 | `translate_page.py` | Text-node selection, block context, parallel translation, and DOM reinsertion |
 | `validate.py` | Dataset count, path, hash, and target-matching checks |
 | `tests/` | Integration tests using a mock API |
+| `examples/` | Before/after screenshots and source metadata for the README |
 | `validation/` | 7B/32B local GPU inference results, settings, and reviews |
-| `reference/` | Reference implementations for quality, caching, and timing experiments |
 | `maintainer/` | Dataset export and ZIP packaging tools |
 
 ## Page translation
