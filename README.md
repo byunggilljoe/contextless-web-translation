@@ -6,28 +6,30 @@ HTML을 정제한 뒤 번역 대상과 주변 문맥을 모델에 전달하여 �
 
 ## 번역 예시
 
-동일한 문맥 128문자와 최대 생성 32토큰으로 실행한 `Qwen2.5-Coder-32B-Instruct` 결과입니다. Chrome 번역은 데이터 수집 당시의 값입니다.
+같은 `Qwen2.5-Coder-32B-Instruct`를 로컬에서 실행한 **5개 예시**입니다. 두 조건의 생성 설정은 temperature 0.01, 최대 32토큰, seed 0입니다.
 
-| 항목 ID | 번역 전 원문 | Chrome 번역 | 32B 번역 후 | 수작업 참조 |
-|---|---|---|---|---|
-| en2ko:2 | dismiss | 해고하다 | 닫기 | 닫기 |
-| de2ko:1 | Stoffart | 스토파트 | 소재 | 원단 |
-| de2ko:2 | Herkunft | 기원 | 원산지 | 원산지 |
-| es2ko:2 | Devoluciones | 보고 | 반품 | 반품 |
-| es2ko:1 | Enviar a | 보내기 | 보내기 | 배송 |
-| zh2ko:2 | 面料类型 | 원단 종류 | 면단 종류 | 소재 |
+- **contextless**: `--mode contextless`로 원문 문자열만 입력합니다.
+- **contextful**: `--mode qa --window 128`로 정제 HTML의 주변 문맥을 좌우 128문자씩 제공합니다.
 
-`dismiss`의 닫기 동작과 `Devoluciones`의 반품 문맥을 반영한 결과가 있으며, `Enviar a`, `面料类型`처럼 참조에 못 미치는 결과도 있습니다. [전체 10건과 7B·32B 비교](validation/LOCAL_MODEL_32B.md)
+| 번역 전 | 번역 후 (contextless) | 번역 후 (contextful) |
+|---|---|---|
+| dismiss | 거부하다 | 닫기 |
+| Stoffart | 질감 | 소재 |
+| Herkunft | 태생 | 원산지 |
+| Devoluciones | 환불 | 반품 |
+| Enviar a | 전송하기 | 보내기 |
 
-### 웹페이지의 번역 전·후
+`Enviar a`는 contextful에서도 참조 번역인 `배송` 대신 `보내기`를 생성했습니다. 항목 ID·참조 번역·조건은 [비교 데이터](examples/comparison_5.json), 실제 입력과 응답은 [contextless 결과](validation/local_model_32b_contextless5.jsonl)와 [contextful 결과](validation/local_model_32b_10.jsonl)에 있습니다. 각 조건은 위 모드의 프롬프트 형식을 사용합니다.
 
-수집한 독일어 상품 페이지(`de/0`)를 브라우저에서 렌더링한 화면입니다. `Stoffart`와 `Herkunft` 두 항목에 기록된 32B 번역을 적용했습니다. 번역 위치는 전에는 주황색, 후에는 초록색으로 표시했으며 다른 본문은 독일어로 유지됩니다.
+### 웹페이지에서의 비교
 
-| 번역 전 | 번역 후 |
-|---|---|
-| ![번역 전 상품 정보: Stoffart, Herkunft](examples/product_details_before.png) | ![번역 후 상품 정보: 소재, 원산지](examples/product_details_after.png) |
+수집한 독일어 상품 페이지(`de/0`)에 두 조건의 실제 번역을 각각 적용한 화면입니다. `Stoffart`와 `Herkunft` 두 항목만 변경했으며, 나머지 본문은 독일어로 유지됩니다. 원문은 주황색, contextless는 파란색, contextful은 초록색으로 표시했습니다.
 
-[상품 페이지 화면: 번역 전](examples/product_before.png) · [번역 후](examples/product_after.png) · [출처·대상 항목·렌더링 정보](examples/screenshots.json)
+| 번역 전 | 번역 후 (contextless) | 번역 후 (contextful) |
+|---|---|---|
+| ![원문: Stoffart, Herkunft](examples/product_details_before.png) | ![문맥 없이 번역: 질감, 태생](examples/product_details_contextless.png) | ![문맥 포함 번역: 소재, 원산지](examples/product_details_contextful.png) |
+
+[상품 페이지: 번역 전](examples/product_before.png) · [contextless](examples/product_contextless.png) · [contextful](examples/product_contextful.png) · [출처·렌더링 정보](examples/screenshots.json)
 
 ## 설치
 

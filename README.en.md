@@ -6,28 +6,30 @@ The method cleans HTML and translates selected strings using their surrounding m
 
 ## Translation examples
 
-These are actual `Qwen2.5-Coder-32B-Instruct` results with 128 context characters per side and a 32-token generation limit. Chrome translations are the values collected with the dataset.
+These **five examples** use actual local inference with the same `Qwen2.5-Coder-32B-Instruct` model. Both conditions use temperature 0.01, a 32-token generation limit, and seed 0.
 
-| Item ID | Source before translation | Chrome translation | 32B output after translation | Manual reference |
-|---|---|---|---|---|
-| en2ko:2 | dismiss | 해고하다 | 닫기 | 닫기 |
-| de2ko:1 | Stoffart | 스토파트 | 소재 | 원단 |
-| de2ko:2 | Herkunft | 기원 | 원산지 | 원산지 |
-| es2ko:2 | Devoluciones | 보고 | 반품 | 반품 |
-| es2ko:1 | Enviar a | 보내기 | 보내기 | 배송 |
-| zh2ko:2 | 面料类型 | 원단 종류 | 면단 종류 | 소재 |
+- **contextless**: `--mode contextless` receives only the source string.
+- **contextful**: `--mode qa --window 128` receives cleansed HTML with 128 context characters per side.
 
-The outputs capture the dismiss action and returns context in some items, while `Enviar a` and `面料类型` remain below the manual references. [All 10 items and the 7B/32B comparison](validation/LOCAL_MODEL_32B.en.md)
+| Before translation | After translation (contextless) | After translation (contextful) |
+|---|---|---|
+| dismiss | 거부하다 | 닫기 |
+| Stoffart | 질감 | 소재 |
+| Herkunft | 태생 | 원산지 |
+| Devoluciones | 환불 | 반품 |
+| Enviar a | 전송하기 | 보내기 |
 
-### Before and after on the webpage
+For `Enviar a`, the contextful condition still produced `보내기` instead of the manual reference `배송`. Item IDs, references, and conditions are in the [comparison data](examples/comparison_5.json). Actual inputs and responses are in the [contextless results](validation/local_model_32b_contextless5.jsonl) and [contextful results](validation/local_model_32b_10.jsonl). Each condition uses the prompt format of its stated mode.
 
-These browser screenshots render the archived German product page (`de/0`). The recorded 32B translations are applied only to the `Stoffart` and `Herkunft` labels. Orange marks the targets before translation; green marks them after translation. Other page text remains in German.
+### Comparison on the webpage
 
-| Before translation | After translation |
-|---|---|
-| ![Product facts before translation: Stoffart, Herkunft](examples/product_details_before.png) | ![Product facts after translation: 소재, 원산지](examples/product_details_after.png) |
+These screenshots apply the actual outputs from both conditions to the archived German product page (`de/0`). Only the `Stoffart` and `Herkunft` labels are changed; other text remains in German. Orange marks the source, blue marks contextless outputs, and green marks contextful outputs.
 
-[Product page before translation](examples/product_before.png) · [After translation](examples/product_after.png) · [Source, targets, and rendering metadata](examples/screenshots.json)
+| Before translation | After translation (contextless) | After translation (contextful) |
+|---|---|---|
+| ![Source: Stoffart, Herkunft](examples/product_details_before.png) | ![Contextless: 질감, 태생](examples/product_details_contextless.png) | ![Contextful: 소재, 원산지](examples/product_details_contextful.png) |
+
+[Product page before translation](examples/product_before.png) · [Contextless](examples/product_contextless.png) · [Contextful](examples/product_contextful.png) · [Source and rendering metadata](examples/screenshots.json)
 
 ## Installation
 

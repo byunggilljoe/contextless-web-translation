@@ -1,0 +1,70 @@
+{
+  "model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "model_revision": "381fc969f78efac66bc87ff7ddeadb7e73c218a7",
+  "conditions": {
+    "contextless": {
+      "mode": "contextless",
+      "input": "target string only",
+      "result_path": "validation/local_model_32b_contextless5.jsonl"
+    },
+    "contextful": {
+      "mode": "qa",
+      "clean_html": true,
+      "window_chars_per_side": 128,
+      "result_path": "validation/local_model_32b_10.jsonl"
+    }
+  },
+  "generation": {
+    "temperature": 0.01,
+    "max_tokens": 32,
+    "seed": 0
+  },
+  "examples": [
+    {
+      "id": "en2ko:2",
+      "page_id": "en/0",
+      "html_path": "data/html/en/0/original.html",
+      "source": "dismiss",
+      "contextless": "거부하다",
+      "contextful": "닫기",
+      "reference_translation": "닫기"
+    },
+    {
+      "id": "de2ko:1",
+      "page_id": "de/0",
+      "html_path": "data/html/de/0/original.html",
+      "source": "Stoffart",
+      "contextless": "질감",
+      "contextful": "소재",
+      "reference_translation": "원단"
+    },
+    {
+      "id": "de2ko:2",
+      "page_id": "de/0",
+      "html_path": "data/html/de/0/original.html",
+      "source": "Herkunft",
+      "contextless": "태생",
+      "contextful": "원산지",
+      "reference_translation": "원산지"
+    },
+    {
+      "id": "es2ko:2",
+      "page_id": "es/0",
+      "html_path": "data/html/es/0/original.html",
+      "source": "Devoluciones",
+      "contextless": "환불",
+      "contextful": "반품",
+      "reference_translation": "반품"
+    },
+    {
+      "id": "es2ko:1",
+      "page_id": "es/0",
+      "html_path": "data/html/es/0/original.html",
+      "source": "Enviar a",
+      "contextless": "전송하기",
+      "contextful": "보내기",
+      "reference_translation": "배송"
+    }
+  ],
+  "scope": "Five illustrative examples; prompts differ between the target-only and HTML Q&A conditions. No aggregate quality score is assigned."
+}

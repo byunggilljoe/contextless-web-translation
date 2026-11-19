@@ -4,19 +4,54 @@
   "source_url": "https://www.amazon.com/Amazon-Essentials-Flannel-Pajama-Black/dp/B07BJKXRKD/?_encoding=UTF8&pd_rd_w=VuXrB&content-id=amzn1.sym.9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_p=9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_r=YW1PBAXYY5M56068QDS5&pd_rd_wg=uePGy&pd_rd_r=d204ef82-5d10-460c-8c06-46f26e6b4e54&ref_=pd_hp_d_btf_crs_zg_bs_7141123011",
   "source_html_sha256": "3153d93194f59e86bf803f87f1ff7a8207912b12459b5390507b2163b6efd60b",
   "model": "Qwen/Qwen2.5-Coder-32B-Instruct",
-  "result_path": "validation/local_model_32b_10.jsonl",
+  "model_revision": "381fc969f78efac66bc87ff7ddeadb7e73c218a7",
+  "conditions": {
+    "contextless": {
+      "mode": "contextless",
+      "input": "target string only",
+      "result_path": "validation/local_model_32b_contextless5.jsonl"
+    },
+    "contextful": {
+      "mode": "qa",
+      "clean_html": true,
+      "window_chars_per_side": 128,
+      "result_path": "validation/local_model_32b_10.jsonl"
+    }
+  },
   "targets": [
     {
       "id": "de2ko:1",
-      "before": "Stoffart",
-      "after": "소재"
+      "page_id": "de/0",
+      "html_path": "data/html/de/0/original.html",
+      "source": "Stoffart",
+      "contextless": "질감",
+      "contextful": "소재",
+      "reference_translation": "원단"
     },
     {
       "id": "de2ko:2",
-      "before": "Herkunft",
-      "after": "원산지"
+      "page_id": "de/0",
+      "html_path": "data/html/de/0/original.html",
+      "source": "Herkunft",
+      "contextless": "태생",
+      "contextful": "원산지",
+      "reference_translation": "원산지"
     }
   ],
+  "images": {
+    "before": {
+      "page": "examples/product_before.png",
+      "details": "examples/product_details_before.png"
+    },
+    "contextless": {
+      "page": "examples/product_contextless.png",
+      "details": "examples/product_details_contextless.png"
+    },
+    "contextful": {
+      "page": "examples/product_contextful.png",
+      "details": "examples/product_details_contextful.png"
+    }
+  },
   "rendering": {
     "browser": "Chromium 153.0.8010.12",
     "viewport_css_pixels": {
@@ -27,7 +62,7 @@
     "javascript_enabled": false,
     "external_network_requests": "blocked",
     "resources": "archived page-local CSS and images",
-    "highlighting": "orange before translation; green after translation"
+    "highlighting": "orange: source; blue: contextless; green: contextful"
   },
-  "scope": "Screenshots of archived page rendering. Only the two selected labels were replaced with recorded 32B outputs; other text remains in the source language."
+  "scope": "Archived webpage rendering with only two selected labels replaced by the recorded outputs for each condition. Other text remains in German."
 }
