@@ -211,4 +211,23 @@ python validate.py --check-targets
 
 GPU 실행에 사용한 버전은 `requirements-vllm.txt`에 고정했습니다. 외부 상용 API와 논문의 품질·속도 표 전체는 검증하지 않았습니다. [검증 내역](VALIDATION.md)
 
+## 인용
+
+이 데이터셋이나 코드를 연구에 사용하셨다면 다음 원논문을 인용해 주세요. [원논문 DOI](https://doi.org/10.1016/j.eswa.2026.133227)
+
+```bibtex
+@article{joe2026contextless,
+  author  = {Joe, Byunggill and Shin, Saim},
+  title   = {Overcoming contextless web markup text translation: A parallel and selective {Q\&A}-driven {LLM} approach},
+  journal = {Expert Systems with Applications},
+  volume  = {331},
+  pages   = {133227},
+  year    = {2026},
+  doi     = {10.1016/j.eswa.2026.133227},
+  url     = {https://doi.org/10.1016/j.eswa.2026.133227}
+}
+```
+
+[BibTeX 파일 다운로드](citation.bib)
+
 [코드 구조](PROJECT_OVERVIEW.md)

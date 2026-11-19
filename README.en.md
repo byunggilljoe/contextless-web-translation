@@ -211,4 +211,23 @@ Validation used Python 3.12, Beautiful Soup 4.12.3, and soupsieve 2.6. Data chec
 
 The tested GPU package versions are pinned in `requirements-vllm.txt`. Commercial API inference and the paper's complete quality/timing tables remain unverified. [Validation details](VALIDATION.en.md)
 
+## Citation
+
+If you use this dataset or code in your research, please cite the original paper. [Paper DOI](https://doi.org/10.1016/j.eswa.2026.133227)
+
+```bibtex
+@article{joe2026contextless,
+  author  = {Joe, Byunggill and Shin, Saim},
+  title   = {Overcoming contextless web markup text translation: A parallel and selective {Q\&A}-driven {LLM} approach},
+  journal = {Expert Systems with Applications},
+  volume  = {331},
+  pages   = {133227},
+  year    = {2026},
+  doi     = {10.1016/j.eswa.2026.133227},
+  url     = {https://doi.org/10.1016/j.eswa.2026.133227}
+}
+```
+
+[Download the BibTeX file](citation.bib)
+
 [Code overview](PROJECT_OVERVIEW.en.md)
