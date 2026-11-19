@@ -21,15 +21,51 @@ These **five examples** use actual local inference with the same `Qwen2.5-Coder-
 
 For `Enviar a`, the contextful condition still produced `보내기` instead of the manual reference `배송`. Item IDs, references, and conditions are in the [comparison data](examples/comparison_5.json). Actual inputs and responses are in the [contextless results](validation/local_model_32b_contextless5.jsonl) and [contextful results](validation/local_model_32b_10.jsonl). Each condition uses the prompt format of its stated mode.
 
-### Comparison on the webpage
+### Webpage screenshots
 
-These screenshots apply the actual outputs from both conditions to the archived German product page (`de/0`). Only the `Stoffart` and `Herkunft` labels are changed; other text remains in German. Orange marks the source, blue marks contextless outputs, and green marks contextful outputs.
+**All five examples have screenshots for all three conditions.** The archived HTML and local resources are rendered in a browser, and only the current target is replaced with its recorded translation. Other page text remains unchanged. Orange marks the source, blue marks contextless, and green marks contextful. Click an image to enlarge it.
+
+#### 1. Dismiss button in the delivery notice: `dismiss` (`en2ko:2`)
 
 | Before translation | After translation (contextless) | After translation (contextful) |
 |---|---|---|
-| ![Source: Stoffart, Herkunft](examples/product_details_before.png) | ![Contextless: 질감, 태생](examples/product_details_contextless.png) | ![Contextful: 소재, 원산지](examples/product_details_contextful.png) |
+| [![before: Dismiss](examples/screenshots/en2ko_2_before.png)](examples/screenshots/en2ko_2_before.png) | [![contextless: 거부하다](examples/screenshots/en2ko_2_contextless.png)](examples/screenshots/en2ko_2_contextless.png) | [![contextful: 닫기](examples/screenshots/en2ko_2_contextful.png)](examples/screenshots/en2ko_2_contextful.png) |
 
-[Product page before translation](examples/product_before.png) · [Contextless](examples/product_contextless.png) · [Contextful](examples/product_contextful.png) · [Source and rendering metadata](examples/screenshots.json)
+[Archived page overview](examples/screenshots/overview_en_0.png)
+
+#### 2. Fabric field in product information: `Stoffart` (`de2ko:1`)
+
+| Before translation | After translation (contextless) | After translation (contextful) |
+|---|---|---|
+| [![before: Stoffart](examples/screenshots/de2ko_1_before.png)](examples/screenshots/de2ko_1_before.png) | [![contextless: 질감](examples/screenshots/de2ko_1_contextless.png)](examples/screenshots/de2ko_1_contextless.png) | [![contextful: 소재](examples/screenshots/de2ko_1_contextful.png)](examples/screenshots/de2ko_1_contextful.png) |
+
+[Archived page overview](examples/screenshots/overview_de_0.png)
+
+#### 3. Origin field in product information: `Herkunft` (`de2ko:2`)
+
+| Before translation | After translation (contextless) | After translation (contextful) |
+|---|---|---|
+| [![before: Herkunft](examples/screenshots/de2ko_2_before.png)](examples/screenshots/de2ko_2_before.png) | [![contextless: 태생](examples/screenshots/de2ko_2_contextless.png)](examples/screenshots/de2ko_2_contextless.png) | [![contextful: 원산지](examples/screenshots/de2ko_2_contextful.png)](examples/screenshots/de2ko_2_contextful.png) |
+
+[Archived page overview](examples/screenshots/overview_de_0.png)
+
+#### 4. Returns and orders menu: `Devoluciones` (`es2ko:2`)
+
+| Before translation | After translation (contextless) | After translation (contextful) |
+|---|---|---|
+| [![before: Devoluciones](examples/screenshots/es2ko_2_before.png)](examples/screenshots/es2ko_2_before.png) | [![contextless: 환불](examples/screenshots/es2ko_2_contextless.png)](examples/screenshots/es2ko_2_contextless.png) | [![contextful: 반품](examples/screenshots/es2ko_2_contextful.png)](examples/screenshots/es2ko_2_contextful.png) |
+
+[Archived page overview](examples/screenshots/overview_es_0.png)
+
+#### 5. Delivery destination menu: `Enviar a` (`es2ko:1`)
+
+| Before translation | After translation (contextless) | After translation (contextful) |
+|---|---|---|
+| [![before: Enviar a](examples/screenshots/es2ko_1_before.png)](examples/screenshots/es2ko_1_before.png) | [![contextless: 전송하기](examples/screenshots/es2ko_1_contextless.png)](examples/screenshots/es2ko_1_contextless.png) | [![contextful: 보내기](examples/screenshots/es2ko_1_contextful.png)](examples/screenshots/es2ko_1_contextful.png) |
+
+[Archived page overview](examples/screenshots/overview_es_0.png)
+
+[Page sources, target positions, and rendering metadata](examples/screenshots.json)
 
 ## Installation
 

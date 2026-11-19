@@ -42,6 +42,8 @@ See the [7B/32B comparison](validation/LOCAL_MODEL_32B.en.md) for sources, trans
 
 The 32B model was also run with `--mode contextless` for the five README items. All five completed with `status=ok` and `finish_reason=stop`. The contextful outputs come from `--mode qa --window 128`. Model revision, temperature, generation cap, and seed match across conditions; each mode uses its own prompt format. [Five-example comparison](examples/comparison_5.json)
 
+Each of the five README examples has source, contextless, and contextful screenshots, for 15 comparison images in total. Original page overviews for the three language-specific pages are also included. Target text was checked against recorded inference outputs, and PNG files and source HTML hashes were verified.
+
 ## Reproduction scope
 
 Commercial API calls and the paper's complete quality/timing tables have not been verified. The integration tests in `tests/` use a mock server. The files in `validation/` contain actual GPU inference results for the same 10 items with each model.

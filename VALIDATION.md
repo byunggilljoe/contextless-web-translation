@@ -42,6 +42,8 @@ Qwen2.5-Coder-7B-Instruct와 32B-Instruct를 각각 NVIDIA A100-SXM4-80GB 1개�
 
 32B 모델로 README의 5개 항목을 `--mode contextless`에서도 실제 실행했습니다. 5건 모두 `status=ok`, `finish_reason=stop`으로 완료했습니다. contextful은 기존 `--mode qa --window 128` 결과이며, 두 조건의 모델·리비전·temperature·최대 생성 토큰·seed는 같습니다. 두 조건은 각 모드의 프롬프트 형식을 사용합니다. [5개 예시 비교](examples/comparison_5.json)
 
+README의 5개 예시마다 번역 전·contextless·contextful 스크린샷을 1장씩, 총 15장 캡처했습니다. 3개 언어별 페이지의 원문 전체 화면도 포함합니다. 각 화면의 대상 문구를 기록된 추론 결과와 대조했고, PNG와 원본 HTML 해시를 확인했습니다.
+
 ## 재현 범위
 
 외부 상용 API 호출과 논문의 품질·속도 표 전체는 검증하지 않았습니다. `tests/`의 통합 테스트는 모의 서버를 사용하며, `validation/`은 동일한 10개 항목에 대한 모델별 실제 GPU 추론 결과를 담고 있습니다.

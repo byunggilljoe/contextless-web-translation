@@ -21,15 +21,51 @@ HTML을 정제한 뒤 번역 대상과 주변 문맥을 모델에 전달하여 �
 
 `Enviar a`는 contextful에서도 참조 번역인 `배송` 대신 `보내기`를 생성했습니다. 항목 ID·참조 번역·조건은 [비교 데이터](examples/comparison_5.json), 실제 입력과 응답은 [contextless 결과](validation/local_model_32b_contextless5.jsonl)와 [contextful 결과](validation/local_model_32b_10.jsonl)에 있습니다. 각 조건은 위 모드의 프롬프트 형식을 사용합니다.
 
-### 웹페이지에서의 비교
+### 웹페이지 스크린샷
 
-수집한 독일어 상품 페이지(`de/0`)에 두 조건의 실제 번역을 각각 적용한 화면입니다. `Stoffart`와 `Herkunft` 두 항목만 변경했으며, 나머지 본문은 독일어로 유지됩니다. 원문은 주황색, contextless는 파란색, contextful은 초록색으로 표시했습니다.
+**5개 예시 각각의 3조건 화면**입니다. 수집한 HTML과 로컬 리소스를 브라우저에서 렌더링하고, 해당 예시의 텍스트 한 곳에만 기록된 번역을 적용했습니다. 나머지 본문은 원문으로 유지됩니다. 원문은 주황색, contextless는 파란색, contextful은 초록색으로 표시했습니다. 이미지를 클릭하면 확대할 수 있습니다.
+
+#### 1. 배송 안내 팝업의 닫기 버튼: `dismiss` (`en2ko:2`)
 
 | 번역 전 | 번역 후 (contextless) | 번역 후 (contextful) |
 |---|---|---|
-| ![원문: Stoffart, Herkunft](examples/product_details_before.png) | ![문맥 없이 번역: 질감, 태생](examples/product_details_contextless.png) | ![문맥 포함 번역: 소재, 원산지](examples/product_details_contextful.png) |
+| [![before: Dismiss](examples/screenshots/en2ko_2_before.png)](examples/screenshots/en2ko_2_before.png) | [![contextless: 거부하다](examples/screenshots/en2ko_2_contextless.png)](examples/screenshots/en2ko_2_contextless.png) | [![contextful: 닫기](examples/screenshots/en2ko_2_contextful.png)](examples/screenshots/en2ko_2_contextful.png) |
 
-[상품 페이지: 번역 전](examples/product_before.png) · [contextless](examples/product_contextless.png) · [contextful](examples/product_contextful.png) · [출처·렌더링 정보](examples/screenshots.json)
+[수집 페이지 전체 화면](examples/screenshots/overview_en_0.png)
+
+#### 2. 상품 정보의 소재 항목: `Stoffart` (`de2ko:1`)
+
+| 번역 전 | 번역 후 (contextless) | 번역 후 (contextful) |
+|---|---|---|
+| [![before: Stoffart](examples/screenshots/de2ko_1_before.png)](examples/screenshots/de2ko_1_before.png) | [![contextless: 질감](examples/screenshots/de2ko_1_contextless.png)](examples/screenshots/de2ko_1_contextless.png) | [![contextful: 소재](examples/screenshots/de2ko_1_contextful.png)](examples/screenshots/de2ko_1_contextful.png) |
+
+[수집 페이지 전체 화면](examples/screenshots/overview_de_0.png)
+
+#### 3. 상품 정보의 원산지 항목: `Herkunft` (`de2ko:2`)
+
+| 번역 전 | 번역 후 (contextless) | 번역 후 (contextful) |
+|---|---|---|
+| [![before: Herkunft](examples/screenshots/de2ko_2_before.png)](examples/screenshots/de2ko_2_before.png) | [![contextless: 태생](examples/screenshots/de2ko_2_contextless.png)](examples/screenshots/de2ko_2_contextless.png) | [![contextful: 원산지](examples/screenshots/de2ko_2_contextful.png)](examples/screenshots/de2ko_2_contextful.png) |
+
+[수집 페이지 전체 화면](examples/screenshots/overview_de_0.png)
+
+#### 4. 반품·주문 메뉴: `Devoluciones` (`es2ko:2`)
+
+| 번역 전 | 번역 후 (contextless) | 번역 후 (contextful) |
+|---|---|---|
+| [![before: Devoluciones](examples/screenshots/es2ko_2_before.png)](examples/screenshots/es2ko_2_before.png) | [![contextless: 환불](examples/screenshots/es2ko_2_contextless.png)](examples/screenshots/es2ko_2_contextless.png) | [![contextful: 반품](examples/screenshots/es2ko_2_contextful.png)](examples/screenshots/es2ko_2_contextful.png) |
+
+[수집 페이지 전체 화면](examples/screenshots/overview_es_0.png)
+
+#### 5. 배송 국가 선택 메뉴: `Enviar a` (`es2ko:1`)
+
+| 번역 전 | 번역 후 (contextless) | 번역 후 (contextful) |
+|---|---|---|
+| [![before: Enviar a](examples/screenshots/es2ko_1_before.png)](examples/screenshots/es2ko_1_before.png) | [![contextless: 전송하기](examples/screenshots/es2ko_1_contextless.png)](examples/screenshots/es2ko_1_contextless.png) | [![contextful: 보내기](examples/screenshots/es2ko_1_contextful.png)](examples/screenshots/es2ko_1_contextful.png) |
+
+[수집 페이지 전체 화면](examples/screenshots/overview_es_0.png)
+
+[페이지 출처·대상 위치·렌더링 정보](examples/screenshots.json)
 
 ## 설치
 

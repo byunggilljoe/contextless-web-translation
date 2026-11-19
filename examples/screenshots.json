@@ -1,8 +1,4 @@
 {
-  "source_page_id": "de/0",
-  "html_path": "data/html/de/0/original.html",
-  "source_url": "https://www.amazon.com/Amazon-Essentials-Flannel-Pajama-Black/dp/B07BJKXRKD/?_encoding=UTF8&pd_rd_w=VuXrB&content-id=amzn1.sym.9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_p=9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_r=YW1PBAXYY5M56068QDS5&pd_rd_wg=uePGy&pd_rd_r=d204ef82-5d10-460c-8c06-46f26e6b4e54&ref_=pd_hp_d_btf_crs_zg_bs_7141123011",
-  "source_html_sha256": "3153d93194f59e86bf803f87f1ff7a8207912b12459b5390507b2163b6efd60b",
   "model": "Qwen/Qwen2.5-Coder-32B-Instruct",
   "model_revision": "381fc969f78efac66bc87ff7ddeadb7e73c218a7",
   "conditions": {
@@ -18,7 +14,51 @@
       "result_path": "validation/local_model_32b_10.jsonl"
     }
   },
-  "targets": [
+  "examples": [
+    {
+      "id": "en2ko:2",
+      "page_id": "en/0",
+      "html_path": "data/html/en/0/original.html",
+      "source": "dismiss",
+      "contextless": "거부하다",
+      "contextful": "닫기",
+      "reference_translation": "닫기",
+      "source_url": "https://www.amazon.com/Amazon-Essentials-Flannel-Pajama-Black/dp/B07BJKXRKD/?_encoding=UTF8&pd_rd_w=VuXrB&content-id=amzn1.sym.9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_p=9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_r=YW1PBAXYY5M56068QDS5&pd_rd_wg=uePGy&pd_rd_r=d204ef82-5d10-460c-8c06-46f26e6b4e54&ref_=pd_hp_d_btf_crs_zg_bs_7141123011",
+      "source_html_sha256": "b72e1f23b9c28b91a2598f39c27d7e92a1b7eb8532fcf7aaa7d570f08158488e",
+      "displayed_before": "Dismiss",
+      "images": {
+        "before": "examples/screenshots/en2ko_2_before.png",
+        "contextless": "examples/screenshots/en2ko_2_contextless.png",
+        "contextful": "examples/screenshots/en2ko_2_contextful.png"
+      },
+      "clip_css_pixels": {
+        "x": 300,
+        "y": 128,
+        "width": 290,
+        "height": 70
+      },
+      "target_bounds": {
+        "before": {
+          "x": 331.953125,
+          "y": 149,
+          "width": 71.21875,
+          "height": 29
+        },
+        "contextless": {
+          "x": 333.28125,
+          "y": 149,
+          "width": 69.890625,
+          "height": 29
+        },
+        "contextful": {
+          "x": 357.71875,
+          "y": 149,
+          "width": 45.453125,
+          "height": 29
+        }
+      },
+      "scope": "Only this item is replaced in each screenshot; other page text is unchanged."
+    },
     {
       "id": "de2ko:1",
       "page_id": "de/0",
@@ -26,7 +66,42 @@
       "source": "Stoffart",
       "contextless": "질감",
       "contextful": "소재",
-      "reference_translation": "원단"
+      "reference_translation": "원단",
+      "source_url": "https://www.amazon.com/Amazon-Essentials-Flannel-Pajama-Black/dp/B07BJKXRKD/?_encoding=UTF8&pd_rd_w=VuXrB&content-id=amzn1.sym.9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_p=9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_r=YW1PBAXYY5M56068QDS5&pd_rd_wg=uePGy&pd_rd_r=d204ef82-5d10-460c-8c06-46f26e6b4e54&ref_=pd_hp_d_btf_crs_zg_bs_7141123011",
+      "source_html_sha256": "3153d93194f59e86bf803f87f1ff7a8207912b12459b5390507b2163b6efd60b",
+      "displayed_before": "Stoffart",
+      "images": {
+        "before": "examples/screenshots/de2ko_1_before.png",
+        "contextless": "examples/screenshots/de2ko_1_contextless.png",
+        "contextful": "examples/screenshots/de2ko_1_contextful.png"
+      },
+      "clip_css_pixels": {
+        "x": 480,
+        "y": 710,
+        "width": 380,
+        "height": 175
+      },
+      "target_bounds": {
+        "before": {
+          "x": 496.09375,
+          "y": 760.1875,
+          "width": 60.78125,
+          "height": 16
+        },
+        "contextless": {
+          "x": 496.09375,
+          "y": 760.1875,
+          "width": 26.328125,
+          "height": 16
+        },
+        "contextful": {
+          "x": 496.09375,
+          "y": 760.1875,
+          "width": 26.328125,
+          "height": 16
+        }
+      },
+      "scope": "Only this item is replaced in each screenshot; other page text is unchanged."
     },
     {
       "id": "de2ko:2",
@@ -35,22 +110,136 @@
       "source": "Herkunft",
       "contextless": "태생",
       "contextful": "원산지",
-      "reference_translation": "원산지"
+      "reference_translation": "원산지",
+      "source_url": "https://www.amazon.com/Amazon-Essentials-Flannel-Pajama-Black/dp/B07BJKXRKD/?_encoding=UTF8&pd_rd_w=VuXrB&content-id=amzn1.sym.9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_p=9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_r=YW1PBAXYY5M56068QDS5&pd_rd_wg=uePGy&pd_rd_r=d204ef82-5d10-460c-8c06-46f26e6b4e54&ref_=pd_hp_d_btf_crs_zg_bs_7141123011",
+      "source_html_sha256": "3153d93194f59e86bf803f87f1ff7a8207912b12459b5390507b2163b6efd60b",
+      "displayed_before": "Herkunft",
+      "images": {
+        "before": "examples/screenshots/de2ko_2_before.png",
+        "contextless": "examples/screenshots/de2ko_2_contextless.png",
+        "contextful": "examples/screenshots/de2ko_2_contextful.png"
+      },
+      "clip_css_pixels": {
+        "x": 480,
+        "y": 710,
+        "width": 380,
+        "height": 175
+      },
+      "target_bounds": {
+        "before": {
+          "x": 496.09375,
+          "y": 818.1875,
+          "width": 70.15625,
+          "height": 16
+        },
+        "contextless": {
+          "x": 496.09375,
+          "y": 818.1875,
+          "width": 26.328125,
+          "height": 16
+        },
+        "contextful": {
+          "x": 496.09375,
+          "y": 818.1875,
+          "width": 39.484375,
+          "height": 16
+        }
+      },
+      "scope": "Only this item is replaced in each screenshot; other page text is unchanged."
+    },
+    {
+      "id": "es2ko:2",
+      "page_id": "es/0",
+      "html_path": "data/html/es/0/original.html",
+      "source": "Devoluciones",
+      "contextless": "환불",
+      "contextful": "반품",
+      "reference_translation": "반품",
+      "source_url": "https://www.amazon.com/Amazon-Essentials-Flannel-Pajama-Black/dp/B07BJKXRKD/?_encoding=UTF8&pd_rd_w=VuXrB&content-id=amzn1.sym.9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_p=9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_r=YW1PBAXYY5M56068QDS5&pd_rd_wg=uePGy&pd_rd_r=d204ef82-5d10-460c-8c06-46f26e6b4e54&ref_=pd_hp_d_btf_crs_zg_bs_7141123011",
+      "source_html_sha256": "dda0869cc9baadb548329ea87cb7663e8160e8d90f5b7f97870a64dba02a9a94",
+      "displayed_before": "Devoluciones",
+      "images": {
+        "before": "examples/screenshots/es2ko_2_before.png",
+        "contextless": "examples/screenshots/es2ko_2_contextless.png",
+        "contextful": "examples/screenshots/es2ko_2_contextful.png"
+      },
+      "clip_css_pixels": {
+        "x": 1170,
+        "y": 0,
+        "width": 270,
+        "height": 95
+      },
+      "target_bounds": {
+        "before": {
+          "x": 1226.828125,
+          "y": 15,
+          "width": 80.53125,
+          "height": 14
+        },
+        "contextless": {
+          "x": 1231.046875,
+          "y": 15,
+          "width": 76.3125,
+          "height": 14
+        },
+        "contextful": {
+          "x": 1231.046875,
+          "y": 15,
+          "width": 76.3125,
+          "height": 14
+        }
+      },
+      "scope": "Only this item is replaced in each screenshot; other page text is unchanged."
+    },
+    {
+      "id": "es2ko:1",
+      "page_id": "es/0",
+      "html_path": "data/html/es/0/original.html",
+      "source": "Enviar a",
+      "contextless": "전송하기",
+      "contextful": "보내기",
+      "reference_translation": "배송",
+      "source_url": "https://www.amazon.com/Amazon-Essentials-Flannel-Pajama-Black/dp/B07BJKXRKD/?_encoding=UTF8&pd_rd_w=VuXrB&content-id=amzn1.sym.9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_p=9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_r=YW1PBAXYY5M56068QDS5&pd_rd_wg=uePGy&pd_rd_r=d204ef82-5d10-460c-8c06-46f26e6b4e54&ref_=pd_hp_d_btf_crs_zg_bs_7141123011",
+      "source_html_sha256": "dda0869cc9baadb548329ea87cb7663e8160e8d90f5b7f97870a64dba02a9a94",
+      "displayed_before": "Enviar a",
+      "images": {
+        "before": "examples/screenshots/es2ko_1_before.png",
+        "contextless": "examples/screenshots/es2ko_1_contextless.png",
+        "contextful": "examples/screenshots/es2ko_1_contextful.png"
+      },
+      "clip_css_pixels": {
+        "x": 125,
+        "y": 0,
+        "width": 230,
+        "height": 90
+      },
+      "target_bounds": {
+        "before": {
+          "x": 154,
+          "y": 15,
+          "width": 157.953125,
+          "height": 14
+        },
+        "contextless": {
+          "x": 154,
+          "y": 15,
+          "width": 157.953125,
+          "height": 14
+        },
+        "contextful": {
+          "x": 154,
+          "y": 15,
+          "width": 157.953125,
+          "height": 14
+        }
+      },
+      "scope": "Only this item is replaced in each screenshot; other page text is unchanged."
     }
   ],
-  "images": {
-    "before": {
-      "page": "examples/product_before.png",
-      "details": "examples/product_details_before.png"
-    },
-    "contextless": {
-      "page": "examples/product_contextless.png",
-      "details": "examples/product_details_contextless.png"
-    },
-    "contextful": {
-      "page": "examples/product_contextful.png",
-      "details": "examples/product_details_contextful.png"
-    }
+  "overviews": {
+    "en/0": "examples/screenshots/overview_en_0.png",
+    "de/0": "examples/screenshots/overview_de_0.png",
+    "es/0": "examples/screenshots/overview_es_0.png"
   },
   "rendering": {
     "browser": "Chromium 153.0.8010.12",
@@ -62,7 +251,7 @@
     "javascript_enabled": false,
     "external_network_requests": "blocked",
     "resources": "archived page-local CSS and images",
-    "highlighting": "orange: source; blue: contextless; green: contextful"
+    "highlighting": "orange: source; blue: contextless; green: contextful; dark target text for contrast"
   },
-  "scope": "Archived webpage rendering with only two selected labels replaced by the recorded outputs for each condition. Other text remains in German."
+  "scope": "Five archived-page examples, each with source/contextless/contextful screenshots. Only one target is replaced per example. Page overviews show original text."
 }
